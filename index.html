@@ -3,91 +3,683 @@
 <head>
 <title>Wong Kay Jan</title>
 <link rel="icon" href="https://3.bp.blogspot.com/-d2D7BIxiCoE/WVSVRWTY9eI/AAAAAAAACBM/mN0o-_beRswOaA8-uQjK_YDuLHJbdcXOQCLcBGAs/s200/woman.png">
-<meta name="author" content="Wong Kay Jan"/> 
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="author" content="Wong Kay Jan"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <style>
-body 	{font-family:'Calibri', Fallback, Sans-Serif;
-	font-size:1em;
-	line-height:1.2;
-	background-image:url(http://i726.photobucket.com/albums/ww269/Ohfatall-ove/Backgrounds/Colourful.gif);
-	background-repeat:repeat;
-	background-attachment:fixed;}
+* {margin:0px; padding:0px;}
+body > div{height:106%; color:black;}
+body 	{font-family:'Calibri', Fallback, Sans-Serif; font-size:1em; line-height:1.2;
+	margin:0; overflow-y:hidden; background-color:none;  overflow:hide;}
+.mainbody	{height:auto; display:table;}
+.credits	{position:fixed; z-index:9999; right:1%; top:98%; padding:0; border:0;
+		color:black; font-size:65%}
+.footer		{position:absolute; top:90%; left:50%; width:300px;
+		padding:0; border:0; margin:0px -150px;
+		color:grey; text-decoration:none; text-align:center}
 @font-face{font-family: 'Calibri';
 	src: url('Calibri.eot'); /* IE9 Compat Modes */
 	src: url('Calibri.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 	url('Calibri.woff') format('woff'), /* Modern Browsers */
 	url('Calibri.ttf')  format('truetype'), /* Safari, Android, iOS */
 	url('Calibri.svg#svgFontName') format('svg'); /* Legacy iOS */}
-f1	{font-size:200%; color:#FFD700; line-height:1.2}
-f2	{font-size:130%; font-weight:bold; line-height:1.2;}
-f3	{font-size:437.5%; font-weight:bold; color:#FFD700; line-height:0.8;}
-f4	{font-size:120%; font-weight:bold; line-height:1.4;}
-f5	{font-size:200%; color:#FFD700; line-height:1.2}
-i 	{color:black; font-style:italic;}
-b 	{color:black;}
-u 	{color:black; border-bottom:1px dashed #ff3366;}
-s 	{color:grey;}
-a:link 	{color:white; text-decoration:none;}
-a:visited 	{color:white;}
-a:hover 	{color:#FFD700;}
+f1	{font-size:200%;}
+f2	{font-size:130%;}
+a:link	{color:inherit; text-decoration:none;}
+a:visited{color:inherit; text-decoration:none;}
+a:hover {color:inherit; text-decoration:none;}
 a[href^="tel"]{color:inherit; text-decoration:none;}
 a[href^="mail"]{color:inherit; text-decoration:none;}
 a[href^="http:"]{color:inherit; text-decoration:none;}
-.banner 	{background-color:black; position:fixed; z-index:999; top:0; left:0; right:0; width:99%;
-		height:auto; border-bottom:2px solid #FFD700;
-		padding:0.5%;
-		color:white; font-weight:bold;}
-.mainbody	{background-color:white; position:relative; top:120px; left:10%; width:80%; height:auto;
-		display:table; overflow:auto;}
-@media (max-width:800px) {
-f5	{font-size:170%; color:#FFD700; line-height:1.2}
+blockquote	{display:block; position:relative; text-align:center;
+		padding:15px 45px 15px 45px; margin:0 0 20px;
+		font-family:Georgia, serif; font-size:110%; line-height:1.2; color:#666;
+		-moz-box-shadow:2px 2px 15px #ccc; 
+		-webkit-box-shadow:2px 2px 15px #ccc; box-shadow:2px 2px 15px #ccc;}
+blockquote::before{content:"\201C";
+		font-family:Georgia, serif; font-size:60px; font-weight:bold; color:#999;
+		position:absolute; left:10px; top:5px;}
+blockquote::after{content:"\201D";
+		font-family:Georgia, serif; font-size:60px; font-weight:bold; color:#999;
+		position:absolute; right:10px; top:5px;}
+.iconbar{position:fixed; top:0; right:0; width:50px; height:100%; list-style-type:none; z-index:9999999}
+.icons	{position:absolute; right:0; width:50px; height:7.5%; background-color:#FFFFFF;
+	padding:5px; border-radius:10px 0 0 10px;
+	transition:height 0.5s; -webkit-transition:height 0.5s;}
+.icons:hover {background-color:#FFD700}
+.icons aa{position:relative; right:-200px; bottom:80%;
+	padding:12px; border-radius:10px 0 0 10px; z-index:-1;
+	-webkit-transition:right 0.3s ease-in-out;
+	font-size:200%; color:#000000; font-weight:600;}
+.icons:hover > aa{right:210px;}
+a.active .icons  {background-color:#FFD700}
+.timeline li{position:relative; left:-30%; list-style-type:none; width:5px;
+	margin:0 auto; padding-top:4%; background:#fff;}
+.timeline li::after {position:absolute; transform:translateX(-50%); left:50%; bottom:0;
+	width:20px; height:20px; content:''; border-radius:50%; background:inherit;}
+.timeline li div {position:relative; left:35px; bottom:0; width:440px;
+	padding:12px; background:#F45B69;}
+.timeline li div::before {content:''; position:absolute; bottom:7px; width:0;
+  	height:0; border-style:solid; left:-15px; border-width:8px 16px 8px 0;
+	border-color:transparent #F45B69 transparent transparent;}
+.timeline li div time {position:absolute; width:65px; left:-130px; bottom:-7px; padding:10px;
+	color:white; font-size:80%; text-align:right;}
+.modmonths	{position:relative; display:inline-block; width:30%; margin-bottom:2px;
+		padding-top:0.3%; padding-bottom:0.3%; padding-left:0.75%; padding-right:0.75%;
+		filter:alpha(opacity=95); opacity:.95; -webkit-transition-duration:.50s;  
+		text-align:center; color:black; text-decoration:none; cursor:default;}
+.mod		{position:relative; display:inline-block; width:30%; margin-bottom:2px;
+		padding-top:0.3%; padding-bottom:0.3%; padding-left:0.75%; padding-right:0.75%;
+		-webkit-transition-duration:.50s;
+		text-align:center; color:black; text-decoration:none; cursor:default;}
+.mod:hover 	{font-style:italic;}
+.hoverpopup	{position:absolute; top:100%; left:-102%; width:293%; height:auto;
+		visibility:hidden; pointer-events:none; background-color:#F45B69;
+		text-align:left; color:#000; padding:12px;}
+.hoverpopup::after 	{content:" "; position:absolute; bottom:100%; left:50%; margin-left: -7px;
+    			border-width:5px; border-style:solid;
+			border-color:transparent transparent #F45B69 transparent;}
+.hoverpopupl	{position:absolute; top:100%; left:-204%; width:293%; height:auto;
+		visibility:hidden; pointer-events:none; background-color:#F45B69;
+		text-align:left; color:#000; padding:12px;}
+.hoverpopupl::after 	{content:" "; position:absolute; bottom:100%; left:83%;
+    			border-width:5px; border-style:solid;
+			border-color:transparent transparent #F45B69 transparent;}
+.hoverpopupla	{position:absolute; top:100%; left:-410%; width:591%; height:auto;
+		visibility:hidden; pointer-events:none; background-color:#F45B69;
+		text-align:left; color:#000; padding:12px;}
+.hoverpopupla::after 	{content:" "; position:absolute; bottom:100%; left:75%;
+    			border-width:5px; border-style:solid;
+			border-color:transparent transparent #F45B69 transparent;}
+.hoverpopuplb	{position:absolute; top:100%; left:-513.5%; width:591%; height:auto;
+		visibility:hidden; pointer-events:none; background-color:#F45B69;
+		text-align:left; color:#000; padding:12px;}
+.hoverpopuplb::after 	{content:" "; position:absolute; bottom:100%; left:91%;
+    			border-width:5px; border-style:solid;
+			border-color:transparent transparent #F45B69 transparent;}
+.hoverpopupr	{position:absolute; top:100%; left:0; width:293%; height:auto;
+		visibility:hidden; pointer-events:none; background-color:#F45B69;
+		text-align:left; color:#000; padding:12px;}
+.hoverpopupr::after 	{content:" "; position:absolute; bottom:100%; left:16%;
+    			border-width:5px; border-style:solid;
+			border-color:transparent transparent #F45B69 transparent;}
+.hoverpopupra	{position:absolute; top:100%; left:0; width:591%; height:auto;
+		visibility:hidden; pointer-events:none; background-color:#F45B69;
+		text-align:left; color:#000; padding:12px;}
+.hoverpopupra::after 	{content:" "; position:absolute; bottom:100%; left:8%;
+    			border-width:5px; border-style:solid;
+			border-color:transparent transparent #F45B69 transparent;}
+.hoverpopuprb	{position:absolute; top:100%; left:-103.5%; width:591%; height:auto;
+		visibility:hidden; pointer-events:none; background-color:#F45B69;
+		text-align:left; color:#000; padding:12px;}
+.hoverpopuprb::after 	{content:" "; position:absolute; bottom:100%; left:24%;
+    			border-width:5px; border-style:solid;
+			border-color:transparent transparent #F45B69 transparent;}
+.mod:hover .hoverpopup  {visibility:visible;}
+.mod:hover .hoverpopupl	{visibility:visible;}
+.mod:hover .hoverpopupla{visibility:visible;}
+.mod:hover .hoverpopuplb{visibility:visible;}
+.mod:hover .hoverpopupr	{visibility:visible;}
+.mod:hover .hoverpopupra{visibility:visible;}
+.mod:hover .hoverpopuprb{visibility:visible;}
+.onlydesktop	{width:auto; height:auto; display:block;}
+
+.onlymobile	{height:0; display:none;}
+
+@media (max-width:1200px) {
+body	{position:fixed; overflow:hidden; background-color:black;}
+f1	{font-size:200%; color:white;}
+f2	{font-size:110%;}
+f3	{color:white; line-height:1.5;}
+.credits	{top:97%; color:white;}
+.mainbody	{position:fixed; left:15%; width:70%; top:50px;
+		color:grey; text-align:justify;}
+.onlydesktop	{height:0; display:none;}
+
+.onlymobile 	{height:auto; display:block;}
 }
 </style>
 </head>
 
 
-<noembed><body></noembed>
-<div class="banner">
-<span style="display:inline-block; line-height:normal; padding-top:8px; padding-left:2%;">
-<f1>Kay Jan</f1>&nbsp;<span style="font-size:200%;">Wong</span><br>
-<f2><font style="color:#FFD700;">Financial Services, Data Analyst</font></f2>
-</span>
-<div style="text-align:right;">
-<span style="font-size:100%; color:#fff; padding-bottom:1%; padding-right:2%;">
-<a href="https://kayjan.github.io/"><span style="color:#FFD700;">Profile</span></a> |
-<a href="https://kayjan.github.io/education/">Education and Projects</a> |
-<a href="https://kayjan.github.io/leadership/">Leadership and Achievements</a> |
-<a href="https://kayjan.github.io/cv/">CV</a> |
-<a href="https://kayjan.github.io/contact/">Contact</a>
-</span>
-</div></div>
+
+<body>
+<script>
+<!--ONE PAGE SCROLLING BY MOUSE-->
+$(document).ready(function () {
+    var divs = $('.body');
+    var dir = 'up';
+    var div = 0;
+    $(document.body).on('DOMMouseScroll mousewheel', function (e) {
+        if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {dir = 'down';}
+        else {dir = 'up';}
+        div = -1;
+        divs.each(function(i){
+        if (div<0 && ($(this).offset().top >= $(window).scrollTop())) 	{div = i;}
+        });
+    if (dir == 'up' && div > 0) {div--;}
+    if (dir == 'down' && div < divs.length) {div++;}
+    //console.log(div, dir, divs.length);
+    $('html,body').stop().animate({scrollTop: divs.eq(div).offset().top}, 200);return false;});
+    $(window).resize(function () {$('html,body').scrollTop(divs.eq(div).offset().top);});
+    });
+<!--ONE PAGE SCROLLING BY ARROW BUTTONS-->
+var handler = function(e) {
+    e = e || window.event;
+    var k = e.keyCode || e.which;
+    switch(k) {
+      case 38: //up
+        document.body.scrollTop -= 100;
+        document.documentElement.scrollTop -= 100;
+        break;
+      case 40: //down
+        document.body.scrollTop += 100;
+        document.documentElement.scrollTop += 100;
+	break;
+      default: return true;
+        }
+    if( e.preventDefault) e.preventDefault();
+    return false;
+    };
+if( window.attachEvent) window.addEvent("onkeydown",handler,false);
+else window.addEventListener("keydown",handler,false);
+<!--SMOOTH SCROLLING-->
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            // (800) specifies the number of milliseconds to scroll to the specified area
+            $('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+                window.location.hash = hash;
+                });
+            }
+        });
+    });
+<!--ADD ACTIVE ICONS VIA CLICKING-->
+//$(document).ready(function() {
+//    $divs = $(".icons");
+//    $divs.click(function() {
+//        $divs.removeClass("active");
+//        $(this).addClass("active");});});
+<!--ADD ACTIVE ICONS VIA SCROLLING-->
+$(document).ready(function(){
+    var aChildren = $("li").children();
+    var aArray = [];
+    for (var i=0; i < aChildren.length; i++) {    
+        var aChild = aChildren[i];
+        var ahref = $(aChild).attr('href');
+        aArray.push(ahref);}
+    $(window).scroll(function(){
+        var windowPos = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var docHeight = $(document).height();
+        for (var i=0; i < aArray.length; i++) {
+            var theID = aArray[i];
+            var divPos = $(theID).offset().top-10;
+            var divHeight = $(theID).height();
+            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                $("a[href='" + theID + "']").addClass("active");}
+            else {$("a[href='" + theID + "']").removeClass("active");}}
+        });
+    });
+</script>
 
 
+
+<div class="onlymobile">
 <div class="mainbody">
-<div style="display:inline-block; width:25%; min-width:230px; text-align:center; padding:2%; padding-left:5%;">
-<img style="width:100%;" src="https://3.bp.blogspot.com/-jOGwWxwFepU/WVT7p2Z60mI/AAAAAAAAAy8/S-17lhEi49QhlrbwykxuBthyoXn-uw6SgCLcBGAs/s1600/Photo%2Bof%2BMe.jpg">
+<f1><b>Kay Jan </b>Wong</f1><br>
+<f2>Financial Services, Data Analyst</f2>
+<br><br><br>
+A highly motivated undergraduate with strong interest in finance and management.<br>
+Possesses strong analytical, reasoning and problem-solving skills.<br>
+A forward looking individual with outstanding communication, teamwork and ability to navigate in a global environment.<br><br>
+<f3>Academic Programme:</f3><br>Engineering Systems and Design (Financial Services)<br><br>
+This website is best viewed on desktop, with screen size above 1200 x 720px.<br><br>
+<center>
+<f3>Let's get in touch!</f3><br>
+<div style="width:20%; display:inline-block">
+<a href="mailto:kayjan_wong@mymail.sutd.edu.sg">
+<img style="width:30px;" src="https://4.bp.blogspot.com/--UuXgdMMzRI/WZQEKG2LLuI/AAAAAAAAA8U/bCUN88uNMsAfrZAkdg792j5M2TQ6RpCrwCLcBGAs/s1600/Email.png"></a>
+</div>
+<div style="width:20%; display:inline-block">
+<a href="http://linkedin.com/in/kayjan" target="_newtab">
+<img style="width:30px;" src="https://4.bp.blogspot.com/-EKjd8ZMxhiw/WZQEKCQsBJI/AAAAAAAAA8Q/NYTRH4iHUZc2CqRe-xww2ogBqP59ur8nQCLcBGAs/s1600/Linkedin.png"></a>
+</div>
+</center>
+</div><!––close mainbody––>
+</div><!--close onlymobile-->
+
+
+
+<div class="onlydesktop">
+<div class="iconbar">
+<li><a href="#profile"><div class="icons" style="top:20%;">
+<img style="height:95%" src="https://1.bp.blogspot.com/-CfMYf6VJXqg/WZMiRzUkBRI/AAAAAAAAA7E/si5UKW1mTsAby_2nnkiAxmEixebQZdaDACLcBGAs/s1600/Profile.png">
+<aa>Profile</aa>
+</div></a></li>
+
+<li><a href="#education"><div class="icons" style="top:30%;">
+<img style="height:95%" src="https://4.bp.blogspot.com/-GW12ErGqGQo/WZMiSXEEdXI/AAAAAAAAA7M/61nx9SqQk88Pw6daDsAbCio_kgZHaYewACLcBGAs/s1600/Education.png">
+<aa>Education</aa>
+</div></a></li>
+
+<li><a href="#projects"><div class="icons" style="top:40%;">
+<img style="height:95%" src="https://2.bp.blogspot.com/-OaJfMG9Lv98/WZMiSkVM9MI/AAAAAAAAA7Q/IkzD_SYmatInbWmiPvWNCqKfXikRttCogCLcBGAs/s1600/Projects.png">
+<aa>Projects</aa>
+</div></a></li>
+
+<li><a href="#achievements"><div class="icons" style="top:50%;">
+<img style="height:95%" src="https://3.bp.blogspot.com/-b6ueUPbO8sA/WZMiSAqhfVI/AAAAAAAAA7I/F3QbFhpgwj81E6pHg_oKZF4OzkibO-qKgCLcBGAs/s1600/Achievement.png">
+<aa>Achievements</aa>
+</div></a></li>
+
+<li><a href="#resume"><div class="icons" style="top:60%;">
+<img style="height:95%" src="https://3.bp.blogspot.com/-EO9qiNO4AxI/WZW5iZgBWiI/AAAAAAAAA8w/R4yJ0gbaSvw-NTXwFRhUIwKxX9IB2uN7gCLcBGAs/s1600/Resume.png">
+<aa>Resume</aa>
+</div></a></li>
+</div><!--close iconbar-->
+</div><!--close onlydesktop-->
+
+
+
+<div class="body" id="profile">
+<div class="onlydesktop">
+<div style="position:absolute; top:50px; left:5%; width:90%; text-align:center"><br><br>
+<img style="width:22%" src="https://1.bp.blogspot.com/-N0QlFUXGg7o/WZNQ9nydeEI/AAAAAAAAA8A/bYz3Le4s6mk31qie1cgE0Wwn3etndSi2ACLcBGAs/s1600/me.png">
+<br><br>
+
+<div style="position:absolute; top:15%; right:62%; text-align:right;">
+<f1><b>Kay Jan </b>Wong</f1><br>
+<f2>Financial Services, Data Analyst</f2>
+<br><br><br>
+A highly motivated undergraduate with<br>
+strong interest in finance and management.<br>
+Possesses strong analytical, reasoning and problem-solving skills.<br>
+A forward looking individual with outstanding communication,<br>
+teamwork and ability to navigate in a global environment.
+<br><br>
+<b>Academic Programme:</b><br>Engineering Systems and Design (Financial Services)
 <br><br>
 </div>
-<div style="display:inline-block; width:30%; min-width:230px; text-align:left; vertical-align:top; padding-top:1.3%; padding-left:5%; padding-right:5%;">
-<f3>HELLO,</f3><br>
-<f5>Nice to meet you</f5>
-<p>A highly motivated undergraduate with strong interest in finance and management. Possesses strong analytical, reasoning and problem-solving skills. A forward looking individual with outstanding communication, teamwork and ability to navigate in a global environment.
-<br><br><br>
-<b>Academic Programme:</b><br>Engineering Systems and Design (Financial Services)
-<br><br></p>
+
+<div style="position:absolute; top:22%; left:62%; text-align:left;">
+<img style="height:30px; vertical-align:middle" src="https://4.bp.blogspot.com/-kJvFWPugjag/WZMDWf-Zx9I/AAAAAAAAA6g/TIOaiLRpChUR9ZtZOaHrl3JgGMQsSDhJgCLcBGAs/s1600/1.%2BHandphone.png">
+<span style="vertical-align:middle;">&nbsp;+65 9222 8081</span>
+<br><br>
+<a href="mailto:kayjan_wong@mymail.sutd.edu.sg">
+<img style="height:30px; vertical-align:middle" src="https://2.bp.blogspot.com/-8994mNQGjxM/WZMDWWSDqpI/AAAAAAAAA6Y/4a8GdWCbXRQ9XCUNDjjsOfMREl0M4Iv7ACLcBGAs/s1600/2.%2BEmail.png">
+<span style="vertical-align:middle;">&nbsp;kayjan_wong@mymail.sutd.edu.sg</span></a>
+<br><br>
+<img style="height:30px; vertical-align:middle" src="https://2.bp.blogspot.com/-xy4E-kHHM0k/WZMDWrLYmtI/AAAAAAAAA6c/gvfkR8yJrRcxeCCvqCEKUH9QvXVj13VlQCLcBGAs/s1600/3.%2BLocation.png">
+<span style="vertical-align:middle;">&nbsp;Singapore</span>
+<br><br>
+<img style="height:30px; vertical-align:middle" src="https://3.bp.blogspot.com/-pm8k7osi7m4/WZMDXFtPy-I/AAAAAAAAA6k/zUitC-pcfhAoXe3uweopZ1bw_gTghXztwCLcBGAs/s1600/4.%2BSkype.png">
+<span style="vertical-align:middle;">&nbsp;kayjanw</span>
+<br><br>
+<a href="http://linkedin.com/in/kayjan" target="_newtab">
+<img style="height:30px; vertical-align:middle" src="https://4.bp.blogspot.com/-FjCnoBWnJRI/WZMDXbMS2BI/AAAAAAAAA6o/bQP8OtZXFa0GHbiFZtXGvyW2PUJnHv10ACLcBGAs/s1600/5.%2BLinkedin.png">
+<span style="vertical-align:middle;">&nbsp;linkedin.com/in/kayjan</span></a>
+<br><br>
 </div>
-<div style="display:inline-block; width:15%; min-width:230px; text-align:left; vertical-align:top; padding-top:1.8%; padding-left:5%;">
-<f2><font style="color:#FFD700;">Cell:</font></f2><br>+65 9222 8081<br><br>
-<f2><font style="color:#FFD700;">Email:</font></f2><br>kayjan_wong@mymail.sutd.edu.sg<br><br>
-<f2><font style="color:#FFD700;">Location:</font></f2><br>Singapore<br><br>
-<f2><font style="color:#FFD700;">Skype:</font></f2><br>kayjanw<br><br>
-<f2><font style="color:#FFD700;">LinkedIn:</font></f2><br><a href="http://linkedin.com/in/kayjan" target="_newtab"><font style="color:000; text-decoration:none;">linkedin.com/in/kayjan</font></a><br><br>
-</div>
-</div>
+</div><!––close position––>
+<br><br>
+<div style="position:absolute; top:60%; left:50%; width:800px; margin:0px -400px;">
+<blockquote>Data Scientist (n.): Person who is better at statistics than any software engineer<br>and better at software engineering than any statistician.</blockquote>
+</div><!––close position––>
+<div style="text-align:center;" class="footer">
+<a href="#education">Scroll to navigate<br>&#8595;</a>
+</div><!––close footer––>
+</div></div><!--close onlydesktop and profile-->
 
 
-<div style="position:fixed; right:1%; bottom:0; padding:0; border:0;">
-<p style="font-size:65%">Copyright 2017 Wong Kay Jan</p>
+
+<div class="body" id="education" style="background-color:#ffffff">
+<div class="onlydesktop">
+<div style="position:absolute: top:0; left:0; width:45%; height:100%; overflow:auto; display:inline-block; background-color:#456990">
+<section class="timeline">
+<li><div><time>2009 - 2012</time>
+<f2>Anderson Secondary School</f2><br>
+GCE O-Level, L1R5:6 (Raw: 10)<br>
+Course studied: Double Science, Double Mathematics, Double Humanities and Higher Chinese
+</div></li>
+<li><div><time>2013 - 2014</time>
+<f2>Pioneer Junior College</f2><br>
+GCE A-Level, Rank Points 85 / 90<br>
+Course studied: H2 Physics, Chemistry, Mathematics and Economics
+</div></li>
+<li><div><time>2016</time>
+<f2>Zhe Jiang University</f2><br>
+Asian Leadership Programme Scholarship, Summer Exchange<br>
+Course studied: Design Fiction, Design Thinking and Expression
+</div></li>
+<li><div><time>2015 - 2018</time>
+<f2>Singapore University of Technology and Design</f2><br>
+Bachelor of Engineering, Engineering Systems and Design (ESD)<br>
+ESD Focus Track: Financial Services<br>
+Current GPA: 4.66 / 5.00 (Expected first class honours - Summa Cum Laude)<br>
+Expected Date of Graduation: Aug 2018<br>
+Course studied: Details on the right
+</div></li>
+</section>
+</div><!––close position––>
+<div style="position:absolute; display:inline-block; left:48%; width:45%; padding:12px;">
+<br><f1>University Curriculum</f1><br><br>
+<div class="modmonths"><b>Jan - Apr</b></div>
+<div class="modmonths"><b>May - Aug</b></div>
+<div class="modmonths"><b>Sep - Dec</b></div>
+
+<div class="mod"></div>
+<div class="mod" style="z-index:16; background-color:#D3D3D3">
+Advanced Maths I
+<span class="hoverpopup"><p>
+Advanced Maths I provides firm foundations of single variable calculus. Students will learn the basic concepts, techniques, and applications of two branches of calculus - differentiation and integration.
+<br><br>Topics covered include Computational of Derivatives, Trigonometric Functions, Mean Value Theorem, Newtons Method, Fundamental Theorem of Calculus, Techniques of Integration etc.
+</p></span></div>
+<div class="mod" style="z-index:16; background-color:#D3D3D3">
+Advanced Maths II
+<span class="hoverpopupl"><p>
+Advanced Maths II is divided into Linear Algebra and Vector Calculus. Linear Algebra introduces methods of finding solution vector x in the equation Ax = b. Vector Calculus deals with single variable and multivariable functions.
+<br><br>Topics covered include Fundamental Theorem of Linear Algebra, Eigenvalues and Eigenvectors of a Matrix, Partial Derivatives and Linear Approximations to Multivariable functions, Level Curves, Vector Fields etc.
+</p></span></div>
+
+<div class="mod"></div>
+<div class="mod" style="z-index:15; background-color:#D3D3D3">
+Chemistry and Biology
+<span class="hoverpopup"><p>
+Chemistry and Biology: Natural World presents the complementary nature of chemistry and biology by providing a solid understanding of the fundamentals of general chemistry, biochemistry, and molecular biology. Throughout the course, emphasis is placed on scientific methodologies, experimental design, problem-solving, and data analysis.
+<br><br>
+Topics covered include concepts of Atomic Structure, Thermodynamics, Acid-Base Reactions, Reaction Kinetics and Catalysis.
+</p></span></div>
+<div class="mod" style="z-index:15; background-color:#D3D3D3">
+Introduction to Design
+<span class="hoverpopupl"><p>
+Introduction to Design introduces students to concepts of design at a variety of scales and through both engineering and architectural design disciplines. This course expose students to design processes, modes of thinking and analysis, relationships between form, space, structure and materiality, and social and cultural aspects of design.
+</p></span></div>
+
+<div class="mod"></div>
+<div class="mod" style="z-index:14; background-color:#D3D3D3">
+Physics I
+<span class="hoverpopup"><p>
+Physics I is a first year mechanics course for engineering students, based on corresponding Physics I course offered at MIT.
+<br><br>
+Topics covered include One Dimensional Motion, Two Dimensional Motion, Force and Newton's Law of Motion, Energy, Systems of Particles, Center of Mass, Momentum conservation, and Two Dimensional Rotational Motion Kinematics and Dynamics.
+</p></span></div>
+<div class="mod" style="z-index:14; background-color:#D3D3D3">
+Physics II
+<span class="hoverpopupl"><p>
+Physics II is a first year electromagnetism course for engineering students, based on similar course offered at MIT.
+<br><br>
+Topics covered include Electrostatics (Coulomb's Law, Gauss' Law), Electric Structure of Matter, Electric Current (Ohm's Law, DC Circuit Theory with capacitors), Magnetostatics (Lorentz Force Law, Biot-Savart Law, Ampere's Law), Time-Varying Fields (Faraday's Law of Induction), Maxwell's Equations (Poynting vector), Electromagnetic Waves.
+</p></span></div>
+
+<div class="mod"></div>
+<div class="mod" style="z-index:13; background-color:#D3D3D3">
+World Civilisations and Texts
+<span class="hoverpopup"><p>
+World Civilisations and Texts equips students with critical reading, writing, and thinking skills by engaging with the interpretative richness of these major documents of human civilisation. As members of a larger community of interpretation, students will learn to identify the connections between various texts and the ways that conversations develop between thinkers throughout history. They will be exposed to different ways of reading and interpreting classic texts and encouraged to develop their own interpretations.
+<br><br>
+Topics covered include Gender and Sexuality, Ecological Implications, Ethics, Historio-political lens and Literature and Narrative.
+</p></span></div>
+<div class="mod" style="z-index:13; background-color:#D3D3D3">
+Theorising Society..
+<span class="hoverpopupl"><p>
+Theorising Society, The Self, And Culture is a social science course that provide students with the conceptual tools necessary to make sense of the complex problems that they face in the modern world.
+<br><br>
+Topics covered include What is society and what are the social sciences, How is society organized and how does it change, How and why do people act and How do people express group values and norms.
+</p></span></div><br><br>
+
+<div class="mod" style="z-index:12; background-color:#D3D3D3">
+Physical World
+<span class="hoverpopupr"><p>
+Engineering in the Physical World provides students with necessary framework to understand, model and engineer the physical world at micro, macro or lumped scale.
+<br><br>
+Topics covered include Molecular Origin of Thermal and Mechanical Phenomena, Chemical and Electrical Domains, Statistical Mechanics to Thermodynamics and Macroscopic Behavior; Conservations Law for Energy, Mass, Momentum, Origins and Limits of Macroscopic Constitutive Relations, Physical Systems (Lumped Approximations, Equilibrium Networks) and Applications to Energy and Materials.
+</p></span></div>
+<div class="modmonths"></div>
+<div class="mod" style="z-index:12; background-color:#7FFF00">
+Engineering Systems Design
+<span class="hoverpopupl"><p>
+Engineering Systems Design introduces various engineering systems and challenges associated with their design, planning and control. This course familiarize students with important industrial applications where system thinking and modeling improve system performance. This includes identifying, evaluating and modeling the objects of an engineering system, the stakeholders, the key performance criteria, key trade-offs, critical constraints, uncertainties and risks.
+<br><br>
+Topics covered include Modeling, Analysis and working with real data and leverage tools and methods from data analysis, probability and optimization.
+</p></span></div>
+
+<div class="mod" style="z-index:11; background-color:#D3D3D3">
+Modeling the Systems World
+<span class="hoverpopupr"><p>
+Modeling the Systems World is divided into Systems Modelling and Systems Optimisation. Systems Modelling introduces the basics of mathematical modelling, Systems Optimisation introduces students to mathematical tool for optimisation.
+<br><br>
+Topics covered include Differential Equations, Laplace Transform, Optimisation, Numerical Solution Algorithms and Networks.
+</p></span></div>
+<div class="modmonths">Summer Exchange</div>
+<div class="mod" style="z-index:11; background-color:#7FFF00">
+Optimization
+<span class="hoverpopupl"><p>
+Optimization covers a broad range of optimization algorithms and models.
+<br><br>
+Topics covered include Linear Programming, Simplex Algorithm, Duality, Sensitivity Analysis, Two Player Zero-Sum Games, Network Optimization, Minimum Cost Flow, Network Simplex Algorithm, Integer Programming, Branch and Bound Methods, Cutting Plane Methods and Dynamic Programming.
+</p></span></div>
+
+<div class="mod" style="z-index:10; background-color:#D3D3D3">
+The Digital World
+<span class="hoverpopupr"><p>
+The Digital World introduces students to the principles of modularity and abstraction, two fundamental ideas in many areas of design.
+<br><br>
+Topics covered include Object-Oriented Programming (OOP) and how to model state machines using abstraction provided in OOP in Python programming language.
+</p></span></div>
+<div class="modmonths">@ Zhe Jiang University</div>
+<div class="mod" style="z-index:10; background-color:#7FFF00">
+Probability
+<span class="hoverpopupl"><p>
+Probability provides students with the basic tools for modeling and analyzing situations that involve uncertainty and will consider applications in various fields.
+<br><br>
+Topics covered include Axioms of Probability, Conditional Probability and Independence, Random Variables (Discrete, Continous, Jointly Distributed), Random Vectors, Probability Distribution, Properties of Expectation and Limit Theorems.
+</p></span></div>
+
+<div class="mod" style="width:14.1%; z-index:9; background-color:#D3D3D3">
+Biology
+<span class="hoverpopupra"><p>
+Biology focuses on the fundamental principles of cellular biology and genetics. The course would focus on the intrinsic and extrinsic factors that influence the normal functioning of biological systems at different levels or organization and how current technology has driven scientific investigation and advancement of our understanding of biological systems.
+<br><br>
+Topics covered include Cell Signaling, Cell Cycle, Cell Cycle Regulation, Sexual Reproduction, Genetic Analytics in Drosophila, Human Genetics, and Cancer.
+</p></span></div>
+<div class="mod" style="width:14.1%; z-index:9; background-color:#D3D3D3">
+Phys Chem
+<span class="hoverpopuprb"><p>
+Introduction to Physical Chemistry presents a solid foundation of the fundamentals of physical chemistry from the atomic level to the molecular level.
+<br><br>
+Topics covered include Semiconductors, Quantum Dots, Spectroscopy, Transition Metals and Electrochemistry.
+</p></span></div>
+<div class="modmonths">China in China</div>
+<div class="mod" style="z-index:9; background-color:#FFA500">
+Organizational Processes
+<span class="hoverpopupl"><p>
+Organizational Processes is organized around three different perspectives on organizations: the strategic design perspective, the political perspective, and the cultural perspective. Each perspective offers a different approach on what an organization does, and correspondingly offers different 'tools for action'. The course will also probe some of the psychological and social processes that inherent in organizations and examine the implications of these insights for understanding the prospects and challenges of working in organizations.
+</p></span></div><br><br>
+
+<div class="mod" style="z-index:8; background-color:#7FFF00">
+Operations Management
+<span class="hoverpopupr"><p>
+Operations Management provides students with an introduction to methods for managing manufacturing and service operations. Special emphasis will be given to the link between operational issues and strategic objectives regarding cost, responsiveness, flexibility, product variety, and customer differentiation. This course also discuss the implications of various emerging technologies, business practices and government regulations.
+<br><br>
+Topics covered include Production Planning and Scheduling, Inventory Control, Supply Chain Coordination, Service System Design and Queuing Theory.
+</p></span></div>
+<div class="modmonths"></div>
+<div class="mod" style="width:14.1%; z-index:8; background-color:#7FFF00">
+DA
+<span class="hoverpopupla"><p>
+Decision Analysis introduces decision analysis tools and methods with a focus on decision making under uncertainty and the structuring of hard decision problems in engineering, business and public policy contexts. The value of flexibility in engineering systems is also appreciated through building models.
+<br><br>
+Topics covered include discounted cash flow analysis, heuristics and biases, structuring and solving decision trees, applying Bayes' Theorem to update prior distributions upon observing new information and calculate the value of information, expected utility theory and modeling using Monte Carlo simulation.
+</p></span></div>
+<div class="mod" style="width:14.1%; z-index:8; background-color:#7FFF00">
+Q&R
+<span class="hoverpopuplb"><p>
+Quality & Reliability introduces modern methods and strategies (i.e. statistical quality control, design of experiments, six sigma) to analyze, manage and improve engineering quality and reliability.
+<br><br>
+Topics covered include key concepts, principles and methods for quality design and their applications to various areas in practice.
+</p></span></div>
+
+<div class="mod" style="z-index:7; background-color:#7FFF00">
+Statistics
+<span class="hoverpopupr"><p>
+Statistics provides an introduction to applied statistics and data analysis. Applications and examples based on engineering systems data will be given.
+<br><br>
+Topics covered include Collecting and Exploring Data, Estimation and Hypothesis Testing, Linear Regression, Analysis of Variance and Elementary Methods in Non-Parametric Statistics.
+</p></span></div>
+<div class="modmonths">Internship</div>
+<div class="mod" style="width:14.1%; z-index:7; background-color:#7FFF00">
+Simulation
+<span class="hoverpopupla"><p>
+Simulation introduces the basic ideas of simulation and its use in the analysis of various systems.
+<br><br>
+Topics covered include use and examples of simulation, general principles, statistical models, random number generators, analysis of simulation data and applications.
+</p></span></div>
+<div class="mod" style="width:14.1%; z-index:7; background-color:#7FFF00">
+Project Mgmt
+<span class="hoverpopuplb"><p>
+Project Management covers theory, models, methods and skills needed for project management, introducing leadership, communication and teamwork skills as relevant for successful projects.
+<br><br>
+Topics covered include network models for conceptualizing projects, planning and scheduling methods for project management, methods for addressing project dynamics due to task uncertainty and project risk, monitoring and rescheduling of projects, project accounting and organizational considerations in managing people and projects.
+</p></span></div>
+
+<div class="mod" style="width:14.1%; z-index:6; background-color:#7FFF00">
+SM
+<span class="hoverpopupra"><p>
+Introduction to Stochastic Modeling deals with the use of probability to model such situations in which uncertainty is present. This course aims at providing basic tools in the analysis of stochastic models and processes.
+<br><br>
+Topics covered include Discrete Time Markov Chains, Poisson Processes, Continuous-time Markov Chains and Queueing Systems.
+</p></span></div>
+<div class="mod" style="width:14.1%; z-index:6; background-color:#7FFF00">
+NM
+<span class="hoverpopuprb"><p>
+Network Modeling demonstrates how the analysis of network models and algorithms are applied to designing, planning and operating various types of engineering systems.
+<br><br>
+Topics covered include Fundamentals of Graph Theory, Network Structures and Properties, Network Dynamics and Evolution, Network Performance and Information Flows and will illustrate these concepts through variety of technical and sociological examples.
+</p></span></div>
+<div class="modmonths">@ KPMG</div>
+<div class="mod" style="z-index:6; background-color:#4099FF">
+Investment Science
+<span class="hoverpopupl"></p>
+Investment Science focus on the financial theory of asset pricing. While it is broad in scope and covers many different topics relating to finance, particular emphasis will be placed on topics related to financial markets.
+<br><br>
+Topics covered include present value, asset valuation, expected utility, portfolio selection and the trade-off between risk and return.
+</p></span></div>
+
+<div class="mod" style="z-index:5; background-color:#FFA500">
+Rice Cultures
+<span class="hoverpopupr"><p>
+Rice Cultures Technology, Society, and Environment in Asia introduces students to the social scientific study of human-environment interactions through the history and culture of a single agricultural crop: rice. The long history of the cultivation of rice forms the core of an independent origin of civilization, distinct from other Eurasians sites that were all based around wheat/barley and millet. Some scholars hypothesize that the cultivation of rice supports a distinctive Asian form of society and mode of historical or technological development, that differs from standard frameworks of 'Western' modernization. This course explores how the cultivation of rice raises exciting and provocative questions about the relationships among society, technology and environment and asks whether Asia's history and culture of rice and provide an alternative figure of technological development and design, and perhaps a model for a sustainable relationship between human and their natural environments.
+</p></span></div>
+<div class="modmonths"></div>
+<div class="mod" style="z-index:5; background-color:#FFA500">
+Microeconomics
+<span class="hoverpopupl"><p>
+Microeconomics seeks to understand economic behavior by starting with individual economic agents - consumer and firms - and move from a bottom-up approach to understand market demand and supply.
+<br><br>
+Topics covered include analyzing market in equilibrium, advantages and disadvantages of various market structures and circumstances under which the market runs into difficulties for delivering efficient outcomes.
+</p></span></div><br><br>
+
+<div class="mod" style="z-index:4; background-color:#7FFF00">
+Capstone (FYP)
+<span class="hoverpopupr">
+</span></div>
+<div class="mod" style="z-index:4; background-color:#7FFF00">
+Capstone (FYP)
+<span class="hoverpopup">
+</span></div>
+<div class="modmonths"></div>
+
+<div class="mod" style="z-index:3; background-color:#4099FF">
+Derivative Pricing and RM
+<span class="hoverpopupr"><p>
+Derivative Pricing and Risk Management introduces the theory and practice of mathematical finance.
+<br><br>
+Topics covered include basics of derivative securities; interest rate and bonds; forward and futures contracts, hedging using futures contracts; option contracts and arbitrage relationship; binomial model, no-arbitrage pricing, risk-neutral pricing, and American options pricing; Brownian motion, Black-Scholes-Merton model, delta hedging, Greek letters, implied volatility, and volatility smile; classical and advanced portfolio management and execution models and strategies.
+</p></span></div>
+<div class="mod" style="z-index:3; background-color:#4099FF">
+Financial Systems Design
+<span class="hoverpopup"><p>
+Financial Systems Design is designed for students who are interested in careers in the securities, banking, and financial management and consulting industries, or as quantitative analysts in corporate treasury and finance departments of general manufacturing and service firms.
+<br><br>
+Topics covered include portfolio theory, derivatives valuation, and financial risk analysis, completing core courses in stochastic processes, optimization, simulation and statistics.
+</p></span></div>
+<div class="modmonths"></div>
+
+<div class="mod" style="z-index:2; background-color:#4099FF">
+Machine Learning
+<span class="hoverpopupr"><p>
+Machine Learning is the study of algorithms that improve their performance at some task with experience. This course will give an in-depth understanding of a broad range of machine learning algorithms from the basic to state-of-the-art, such as: naïve Bayes, logistic regression, neural networks, clustering, probabilistic graphical models, reinforcement learning and SVMs.
+<br><br>
+Topics covered include perception, linear and logistic regression, support vector machines, kernel methods, neural networks and deep learning, clustering, generative models, mixture models and expectation maximization, hidden Markov model, Bayesian networks and reinforcement learning.
+</p></span></div>
+<div class="mod" style="z-index:2; background-color:#4099FF">
+The Analytics Edge
+<span class="hoverpopup"><p>
+The Analytics Edge uses data and analytics to give students an edge in improving various aspects of life. The statistical software R and spreadsheets will be used in the course.
+<br><br>
+Topics covered include real world examples of how analytics is being used with examples from Moneyball, Watson and the Framingham Heart Study among others, tools of analytics such as linear and logistic regression, classification and regression trees, graphical models, visualization, text analytics, clustering and optimization in practice.
+</p></span></div>
+<div class="modmonths"></div>
+
+<div class="mod" style="z-index:1; background-color:#FFA500">
+HASS
+<span class="hoverpopupr">
+</span></div>
+<div class="mod" style="z-index:1; background-color:#FFA500">
+HASS
+<span class="hoverpopup">
+</span></div>
+<div class="modmonths"></div><br><br>
+
+<div style="display:inline-block; width:96%; text-align:right">
+<b>Legend:</b><br>
+<!-- green #7FFF00 orange #FFA500 grey #D3D3D3 blue #4099FF-->
+<div class="modmonths" style="width:0.5em; height:0.5em; background-color:#7FFF00; margin:none;"></div>
+ESD Core Modules&nbsp;
+<div class="modmonths" style="width:0.5em; height:0.5em; background-color:#4099FF; margin:none;"></div>
+Financial Services Electives<br>
+<div class="modmonths" style="width:0.5em; height:0.5em; background-color:#D3D3D3; margin:none;"></div>
+Freshmore Terms&nbsp;
+<div class="modmonths" style="width:0.5em; height:0.5em; background-color:#FFA500; margin:none;"></div>
+Humanities, Arts and Social Sciences (HASS)&nbsp;
 </div>
+</div><!––close position––>
+<div style="top:196%; color:#000" class="footer">
+<a href="#projects">Projects<br>&#8595;</a>
+</div><!––close footer––>
+</div></div><!--close onlydesktop and education-->
+
+
+
+<div class="body" id="projects">
+<div class="onlydesktop">
+Projects
+<div style="top:302%;" class="footer">
+<a href="#achievements">Achievements<br>&#8595;</a>
+</div><!––close footer––>
+</div></div><!--close onlydesktop and projects-->
+
+
+
+<div class="body" id="achievements">
+<div class="onlydesktop">
+Achievements
+<div style="top:408%;" class="footer">
+<a href="#resume">Resume<br>&#8595;</a>
+</div><!––close footer––>
+</div></div><!--close onlydesktop and achievements-->
+
+
+
+<div class="body" id="resume" style="background-color: #aaa">
+<div class="onlydesktop">
+Resume
+</div></div><!--close onlydesktop and resume-->
+
+
+
+<div class="credits">Copyright 2017 Wong Kay Jan</div>
 </body>
 </html>
