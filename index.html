@@ -123,20 +123,47 @@ a.active .icons  {background-color:#FFD700}
 .mod:hover .hoverpopuprb{visibility:visible;}
 .onlydesktop	{width:auto; height:auto; display:block;}
 
+.onlymidscreen	{height:0; display:none;}
 .onlymobile	{height:0; display:none;}
 
-@media (max-width:1200px) {
-body	{position:fixed; top:0; left:0; height:100%; width:100%; background-color:black; 		overflow:hidden}
+@media all and (max-width:1200px) {
+body	{position:fixed; top:0; left:0; height:100%; width:100%; background-color:black; 			overflow:hidden;
+	-webkit-text-size-adjust:none; -ms-text-size-adjust:100%;
+	-moz-text-size-adjust:none; text-size-adjust:none;}
+f1	{font:400 1.875em; color:black;}
+f2	{font:400 1.5em; color:grey; line-height:0.8}
+f3	{font:400 1.25em; color:black; line-height:23px;}
+f4	{font:400 1em; color:grey; line-height:1.5;}
+.credits	{top:97%; color:white;}
+.mainbodya	{position:absolute; top:0; left:0; height:100%; width:50%;
+		background-color:white; text-align:justify;}
+.mainbodyb	{position:absolute; top:0; left:50%; height:100%; width:50%;}
+input[type=text], select, textarea 	{width:100%; resize:vertical;
+					box-sizing:border-box;
+					border:1px solid #ccc; border-radius:4px;
+					padding:10px; margin-bottom:8px;}
+input[type=submit] 	{background-color:white; cursor:pointer;
+			padding:10px 20px; border:none; border-radius:4px;
+			color:black;}
+input[type=submit]:hover{background-color:grey;}
+.onlydesktop	{height:0; display:none;}
+
+.onlymidscreen	{height:auto; display:block;}
+.onlymobile	{height:0; display:none;}
+}
+
+@media all and (max-width:800px) {
+body	{position:fixed; top:0; left:0; height:100%; width:100%; background-color:black; 			overflow:hidden;
+	-webkit-text-size-adjust:none; -ms-text-size-adjust:100%;
+	-moz-text-size-adjust:none; text-size-adjust:none;}
 f1	{font:400 1.875em; color:white;}
 f2	{font:400 1.5em; color:grey; line-height:0.8}
 f3	{font:400 1.25em; color:white; line-height:23px;}
 f4	{font:400 1em; color:grey; line-height:1.5;}
 .credits	{top:97%; color:white;}
-.mainbody	{padding:75px 50px; text-align:justify;
-		-webkit-text-size-adjust:none; -ms-text-size-adjust:100%;
-		-moz-text-size-adjust:none; text-size-adjust:none;}
+.mainbody	{padding:75px 50px; text-align:justify;}
 .onlydesktop	{height:0; display:none;}
-
+.onlymidscreen	{height:0; display:none;}
 .onlymobile 	{height:auto; display:block;}
 }
 </style>
@@ -253,6 +280,41 @@ $(document).ready(function(){
 </center>
 </div><!––close mainbody––>
 </div><!--close onlymobile-->
+
+
+
+<div class="onlymidscreen">
+<div class="mainbodya"><div style="padding:50px">
+<f1><b>Kay Jan </b>Wong</f1><br>
+<f2>Financial Services, Data Analyst</f2>
+<br><br><br>
+<f4>A highly motivated undergraduate with strong interest in finance and management. Possesses strong analytical, reasoning and problem-solving skills. A forward looking individual with outstanding communication, teamwork and ability to navigate in a global environment.</f4><br><br>
+<f3>Academic Programme:</f3><br>
+<f4>Engineering Systems and Design (Financial Services)</f4><br><br>
+<f4>This website is best viewed on desktop, with screen size above 1200 x 720px.</f4><br><br>
+<center>
+<f3>Let's get in touch!</f3><br>
+<div style="width:20%; display:inline-block">
+<a href="mailto:kayjan_wong@mymail.sutd.edu.sg">
+<img style="width:30px;" src="https://1.bp.blogspot.com/-Yh7Z_Y0lTv4/WZhzFYt5BZI/AAAAAAAAA9E/m4f5uNRnAjovU60CGLh_fyciUfEcr0eWwCLcBGAs/s1600/Email.png"></a>
+</div>
+<div style="width:20%; display:inline-block">
+<a href="http://linkedin.com/in/kayjan" target="_newtab">
+<img style="width:30px;" src="https://1.bp.blogspot.com/-kr1JG_AItM8/WZhzFJOEqwI/AAAAAAAAA9A/5hrnRCZ32hckdbbszdA5Vcsc6HYxnf1GgCLcBGAs/s1600/Linkedin.png"></a>
+</div>
+</center>
+</div></div><!––close mainbodya––>
+<div class="mainbodyb"><div style="padding:50px">
+<f1><font style="color:white">Contact me!</font></f1><br>
+<f2>Looking forward to answering your email.</f2><br><br><br>
+<form action="mailto:kayjan_wong@mymail.sutd.edu.sg" method="post" enctype="text/plain">
+<input type="text" id="Name" name="name" placeholder="Name" style="font-family:Calibri; font-size:1em;">
+<input type="text" id="Email" name="email" placeholder="Email" style="font-family:Calibri; font-size:1em;">
+<textarea id="Subject" name="subject" placeholder="Subject" style="font-family:Calibri; font-size:1em; height:150px"></textarea>
+<input type="submit" value="Submit" style="font-family:Calibri; font-size:1em;">
+</form>
+</div></div><!––close mainbodyb––>
+</div><!--close onlymidscreen-->
 
 
 
