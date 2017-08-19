@@ -13,7 +13,7 @@ body > div{height:100%; color:black;}
 body 	{font-family:'Calibri', Fallback, Sans-Serif; font-size:1em; line-height:1.2;
 	margin:0; overflow-y:hidden; background-color:none;  overflow:hide;}
 .mainbody	{height:auto; display:table;}
-.credits	{position:fixed; z-index:9999; right:1%; top:98%; padding:0; border:0;
+.credits	{position:fixed; z-index:100; right:1%; top:98%; padding:0; border:0;
 		color:black; font-size:65%}
 .footer		{position:absolute; top:90%; left:50%; width:300px;
 		padding:0; border:0; margin:0px -150px;
@@ -43,7 +43,7 @@ blockquote::before{content:"\201C";
 blockquote::after{content:"\201D";
 		font-family:Georgia, serif; font-size:60px; font-weight:bold; color:#999;
 		position:absolute; right:10px; top:5px;}
-.iconbar{position:fixed; top:0; right:0; width:50px; height:100%; list-style-type:none; z-index:9999999}
+.iconbar{position:fixed; top:0; right:0; width:50px; height:100%; list-style-type:none; z-index:100}
 .icons	{position:absolute; right:0; width:50px; height:7.5%; background-color:#FFFFFF;
 	padding:5px; border-radius:10px 0 0 10px;
 	transition:height 0.5s; -webkit-transition:height 0.5s;}
@@ -121,6 +121,22 @@ a.active .icons  {background-color:#FFD700}
 .mod:hover .hoverpopupr	{visibility:visible;}
 .mod:hover .hoverpopupra{visibility:visible;}
 .mod:hover .hoverpopuprb{visibility:visible;}
+.modalDialog {position:fixed; top:0; right:0; bottom:0; left:0;
+	background:rgba(0,0,0,0.8); z-index:200; opacity:0; pointer-events:none;
+        -webkit-transition:opacity 400ms ease-in; -moz-transition:opacity 400ms ease-in;
+        transition:opacity 400ms ease-in;}
+.modalDialog:target {opacity:1; pointer-events:auto;}
+.modalDialog > div  {position:absolute; background:#fff; top:3%; left:2%; width:96%; height:94%;
+		box-sizing:border-box; padding:5px 20px 13px 20px; border-radius:10px; 
+        	background:-moz-linear-gradient(#fff, #999);
+		background:-webkit-linear-gradient(#fff, #999);
+        	background:-o-linear-gradient(#fff, #999);}
+.close 	{position:absolute; top:-10px; right:-12px; width:24px; text-align:center;
+	background:#606061; box-shadow:1px 1px 3px #000; font-size:35px;
+        -webkit-border-radius: 12px; -moz-border-radius:12px; border-radius:12px;
+        -moz-box-shadow:1px 1px 3px #000; -webkit-box-shadow:1px 1px 3px #000;
+	color:#FFFFFF; line-height:25px; font-weight:bold; text-decoration:none;}
+.close:hover {background:#FFD700; color:black;}
 .onlydesktop	{width:auto; height:auto; display:block;}
 
 .onlymidscreen	{height:0; display:none;}
@@ -721,7 +737,25 @@ Humanities, Arts and Social Sciences (HASS)&nbsp;
 
 <div class="body" id="projects">
 <div class="onlydesktop">
-Projects
+
+<a href="#openModal1">Box 1</a>
+<div id="openModal1" class="modalDialog">
+<div>
+<a href="#projects" title="Close" class="close">&times;</a>
+<h2>Modal Box 1</h2>
+<p>This is a sample modal box that can be created using the powers of CSS3.</p>
+<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+</div></div>
+
+<a href="#openModal2">Box 2</a>
+<div id="openModal2" class="modalDialog">
+<div>
+<a href="#projects" title="Close" class="close">&times;</a>
+<h2>Modal Box 2</h2>
+<p><strong>Box 2</strong></p>
+<p>yadda yadda</p>
+</div></div>
+
 <div style="top:290%;" class="footer">
 <a href="#achievements">Achievements<br>&#8595;</a>
 </div><!––close footer––>
