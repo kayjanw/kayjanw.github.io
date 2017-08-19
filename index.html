@@ -126,11 +126,13 @@ a.active .icons  {background-color:#FFD700}
 @media (max-width:1200px) {
 body	{position:fixed; top:0; left:0; height:100%; width:100%; background-color:black; 		overflow:hidden}
 f1	{font-size:300%; color:white;}
-f2	{font-size:130%; line-height:0.8}
-f3	{color:white; line-height:1.5;}
+f2	{font-size:130%; color:grey; line-height:0.8}
+f3	{font-size:110%; color:white; line-height:1.5;}
+f4	{font-size:110%; color:grey; line-height:1.5;}
 .credits	{top:97%; color:white;}
-.mainbody	{padding:75px 50px;
-		color:grey; text-align:justify; font-size:110%; line-height:1.5;}
+.mainbody	{padding:75px 50px;  text-align:justify;
+		-webkit-text-size-adjust:none; -ms-text-size-adjust:100%;
+		-moz-text-size-adjust:none; text-size-adjust:none;}
 .onlydesktop	{height:0; display:none;}
 
 .onlymobile 	{height:auto; display:block;}
@@ -161,25 +163,28 @@ $(document).ready(function () {
     $(window).resize(function () {$('html,body').scrollTop(divs.eq(div).offset().top);});
     });
 <!--ONE PAGE SCROLLING BY ARROW BUTTONS-->
-var handler = function(e) {
-    e = e || window.event;
-    var k = e.keyCode || e.which;
-    switch(k) {
-      case 38: //up
-        document.body.scrollTop -= 100;
-        document.documentElement.scrollTop -= 100;
-        break;
-      case 40: //down
-        document.body.scrollTop += 100;
-        document.documentElement.scrollTop += 100;
-	break;
-      default: return true;
-        }
-    if( e.preventDefault) e.preventDefault();
-    return false;
-    };
-if( window.attachEvent) window.addEvent("onkeydown",handler,false);
-else window.addEventListener("keydown",handler,false);
+$(document).ready(function () {
+    var handler = function(e) {
+        e = e || window.event;
+        var k = e.keyCode || e.which;
+	var hgt = 100;
+        switch(k) {
+          case 38: //up
+            document.body.scrollTop -= hgt;
+            document.documentElement.scrollTop -= hgt;
+            break;
+          case 40: //down
+            document.body.scrollTop += hgt;
+            document.documentElement.scrollTop += hgt;
+            break;
+          default: return true;
+            }
+        if( e.preventDefault) e.preventDefault();
+        return false;
+        };
+    if( window.attachEvent) window.addEvent("onkeydown",handler,false);
+    else window.addEventListener("keydown",handler,false);
+    });
 <!--SMOOTH SCROLLING-->
 $(document).ready(function(){
     $("a").on('click', function(event) {
@@ -229,11 +234,10 @@ $(document).ready(function(){
 <f1><b>Kay Jan </b>Wong</f1><br>
 <f2>Financial Services, Data Analyst</f2>
 <br><br><br>
-A highly motivated undergraduate with strong interest in finance and management.<br>
-Possesses strong analytical, reasoning and problem-solving skills.<br>
-A forward looking individual with outstanding communication, teamwork and ability to navigate in a global environment.<br><br>
-<f3>Academic Programme:</f3><br>Engineering Systems and Design (Financial Services)<br><br>
-This website is best viewed on desktop, with screen size above 1200 x 720px.<br><br>
+<f4>A highly motivated undergraduate with strong interest in finance and management. Possesses strong analytical, reasoning and problem-solving skills. A forward looking individual with outstanding communication, teamwork and ability to navigate in a global environment.</f4><br><br>
+<f3>Academic Programme:</f3><br>
+<f4>Engineering Systems and Design (Financial Services)</f4><br><br>
+<f4>This website is best viewed on desktop, with screen size above 1200 x 720px.</f4><br><br>
 <center>
 <f3>Let's get in touch!</f3><br>
 <div style="width:20%; display:inline-block">
@@ -334,7 +338,7 @@ teamwork and ability to navigate in a global environment.
 
 <div class="body" id="education" style="background-color:#ffffff">
 <div class="onlydesktop">
-<div style="position:absolute: top:0; left:0; width:45%; height:100%; overflow:auto; display:inline-block; background-color:#456990">
+<div style="position:absolute; display:inline-block; top:100%; left:0; width:45%; height:100%; overflow:auto;  background-color:#456990">
 <section class="timeline">
 <li><div><time>2009 - 2012</time>
 <f2>Anderson Secondary School</f2><br>
@@ -361,7 +365,7 @@ Course studied: Details on the right
 </div></li>
 </section>
 </div><!––close position––>
-<div style="position:absolute; display:inline-block; left:48%; width:45%; padding:12px;">
+<div style="position:absolute; display:inline-block; top:100%; left:48%; width:49%; height:100%; overflow:auto;">
 <br><f1>University Curriculum</f1><br><br>
 <div class="modmonths"><b>Jan - Apr</b></div>
 <div class="modmonths"><b>May - Aug</b></div>
