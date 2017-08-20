@@ -45,7 +45,7 @@ blockquote::after{content:"\201D";
 		position:absolute; right:10px; top:5px;}
 .iconbar{position:fixed; top:0; right:0; width:50px; height:100%; list-style-type:none; z-index:100}
 .icons	{position:absolute; right:0; width:50px; height:7.5%; background-color:#FFFFFF;
-	padding:5px; border-radius:10px 0 0 10px;
+	padding:10px; border-radius:10px 0 0 10px;
 	transition:height 0.5s; -webkit-transition:height 0.5s;}
 .icons:hover {background-color:#FFD700}
 .icons aa{position:relative; right:-200px; bottom:80%;
@@ -65,7 +65,7 @@ a.active .icons  {background-color:#FFD700}
 	border-color:transparent #F45B69 transparent transparent;}
 .timeline li div time {position:absolute; width:65px; left:-130px; bottom:-7px; padding:10px;
 	color:white; font-size:80%; text-align:right;}
-.modmonths	{position:relative; display:inline-block; width:30%; margin-bottom:2px; 			padding:0.3% 0.75%; cursor:default;
+.modmonths	{position:relative; display:inline-block; width:30%; margin-bottom:2px; 				padding:0.3% 0.75%; cursor:default;
 		filter:alpha(opacity=95); opacity:.95; -webkit-transition-duration:.50s;  
 		text-align:center; color:black; text-decoration:none;}
 .mod		{position:relative; display:inline-block; width:30%; margin-bottom:2px;
@@ -121,6 +121,11 @@ a.active .icons  {background-color:#FFD700}
 .mod:hover .hoverpopupr	{visibility:visible;}
 .mod:hover .hoverpopupra{visibility:visible;}
 .mod:hover .hoverpopuprb{visibility:visible;}
+.modalEd	{position:relative; display:inline-block; width:30%; height:45%; cursor:default;
+		margin:7px 1%; box-sizing:border-box; padding:10px; vertical-align:top;
+		text-align:center; color:black; text-decoration:none;
+		-moz-box-shadow:2px 2px 15px #ccc; 
+		-webkit-box-shadow:2px 2px 15px #ccc; box-shadow:2px 2px 15px #ccc;}
 .modalDialog {position:fixed; top:0; right:0; bottom:0; left:0;
 	background:rgba(0,0,0,0.8); z-index:200; opacity:0; pointer-events:none;
         -webkit-transition:opacity 400ms ease-in; -moz-transition:opacity 400ms ease-in;
@@ -168,7 +173,7 @@ input[type=submit]:hover{background-color:grey;}
 .onlymobile	{height:0; display:none;}
 }
 
-@media all and (max-width:800px) {
+@media all and (max-width:1080px) {
 body	{position:fixed; top:0; left:0; height:100%; width:100%; background-color:black; 			overflow:hidden;
 	-webkit-text-size-adjust:none; -ms-text-size-adjust:100%;
 	-moz-text-size-adjust:none; text-size-adjust:none;}
@@ -300,7 +305,7 @@ $(document).ready(function(){
 
 
 <div class="onlymidscreen">
-<div class="mainbodya"><div style="padding:50px">
+<div class="mainbodya"><div style="padding:50px;">
 <f1><b>Kay Jan </b>Wong</f1><br>
 <f2>Financial Services, Data Analyst</f2>
 <br><br><br>
@@ -320,7 +325,7 @@ $(document).ready(function(){
 </div>
 </center>
 </div></div><!––close mainbodya––>
-<div class="mainbodyb"><div style="padding:50px">
+<div class="mainbodyb"><div style="padding:50px;">
 <f1><font style="color:white">Contact me!</font></f1><br>
 <f2>Looking forward to answering your email.</f2><br><br><br>
 <form action="mailto:kayjan_wong@mymail.sutd.edu.sg" method="post" enctype="text/plain">
@@ -418,7 +423,7 @@ teamwork and ability to navigate in a global environment.
 
 <div class="body" id="education" style="background-color:#ffffff">
 <div class="onlydesktop">
-<div style="position:absolute; display:inline-block; top:100%; left:0; width:45%; height:100%; overflow:auto;  background-color:#456990">
+<div style="position:absolute; display:inline-block; top:100%; left:0; width:45%; height:100%; overflow:auto; background-color:#456990">
 <section class="timeline">
 <li><div><time>2009 - 2012</time>
 <f2>Anderson Secondary School</f2><br>
@@ -737,7 +742,16 @@ Humanities, Arts and Social Sciences (HASS)&nbsp;
 
 <div class="body" id="projects">
 <div class="onlydesktop">
+<div style="position:absolute; display:inline-block; top:202%; left:2%; width:96%; height:88%; overflow:auto; text-align:center;">
 
+<div class="modalEd">
+<f1>Project Leader</f1><br>
+<f2>Network Modeling</f2><br>
+<img style="width:90%; text-align:center;" src="https://3.bp.blogspot.com/-hRQOrEHLXpw/WXSeAFhL3CI/AAAAAAAAA20/43lIYwbPRRUXYmTTja_6EyF-ZWhJkgtogCLcBGAs/s1600/SBS.jpg">
+heyhey
+</div><!--modalEd-->
+
+<div class="modalEd">
 <a href="#openModal1">Box 1</a>
 <div id="openModal1" class="modalDialog">
 <div>
@@ -755,7 +769,25 @@ Humanities, Arts and Social Sciences (HASS)&nbsp;
 <p><strong>Box 2</strong></p>
 <p>yadda yadda</p>
 </div></div>
+</div><!--modalEd-->
 
+<div class="modalEd">
+hey
+</div><!--modalEd-->
+<br><br>
+
+<div class="modalEd">
+hey
+</div><!--modalEd-->
+
+<div class="modalEd">
+hey
+</div><!--modalEd-->
+
+<div class="modalEd">
+hey
+</div><!--modalEd-->
+</div><!--close position-->
 <div style="top:290%;" class="footer">
 <a href="#achievements">Achievements<br>&#8595;</a>
 </div><!––close footer––>
