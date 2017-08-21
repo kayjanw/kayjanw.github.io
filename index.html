@@ -44,7 +44,7 @@ blockquote::after{content:"\201D";
 		font-family:Georgia, serif; font-size:60px; font-weight:bold; color:#999;
 		position:absolute; right:10px; top:5px;}
 .iconbar{position:fixed; top:0; right:0; width:50px; height:100%; list-style-type:none; z-index:100}
-.icons	{position:absolute; right:0; width:50px; height:7.5%; background-color:#FFFFFF;
+.icons	{position:absolute; right:0; width:40px; height:6%; background-color:#FFFFFF;
 	padding:10px; border-radius:10px 0 0 10px;
 	transition:height 0.5s; -webkit-transition:height 0.5s;}
 .icons:hover {background-color:#FFD700}
@@ -72,45 +72,45 @@ a.active .icons  {background-color:#FFD700}
 		padding:0.3% 0.75%; cursor:default; -webkit-transition-duration:.50s;
 		text-align:center; color:black; text-decoration:none;}
 .mod:hover 	{font-style:italic;}
-.hoverpopup	{position:absolute; top:100%; left:-102%; width:293%; height:auto;
+.hoverpopup	{position:absolute; top:100%; left:-102%; width:304%; height:auto;
 		visibility:hidden; pointer-events:none; background-color:#F45B69;
-		text-align:left; color:#000; padding:12px;}
+		text-align:left; color:#000; font-size:0.9em; box-sizing:border-box; padding:12px;}
 .hoverpopup::after 	{content:" "; position:absolute; bottom:100%; left:50%;
 			margin-left: -7px; border-width:5px; border-style:solid;
 			border-color:transparent transparent #F45B69 transparent;}
-.hoverpopupl	{position:absolute; top:100%; left:-204%; width:293%; height:auto;
+.hoverpopupl	{position:absolute; top:100%; left:-204%; width:304%; height:auto;
 		visibility:hidden; pointer-events:none; background-color:#F45B69;
-		text-align:left; color:#000; padding:12px;}
+		text-align:left; color:#000; font-size:0.9em; box-sizing:border-box; padding:12px;}
 .hoverpopupl::after 	{content:" "; position:absolute; bottom:100%; left:83%;
     			border-width:5px; border-style:solid;
 			border-color:transparent transparent #F45B69 transparent;}
-.hoverpopupla	{position:absolute; top:100%; left:-410%; width:591%; height:auto;
+.hoverpopupla	{position:absolute; top:100%; left:-410%; width:612%; height:auto;
 		visibility:hidden; pointer-events:none; background-color:#F45B69;
-		text-align:left; color:#000; padding:12px;}
+		text-align:left; color:#000; font-size:0.9em; box-sizing:border-box; padding:12px;}
 .hoverpopupla::after 	{content:" "; position:absolute; bottom:100%; left:75%;
     			border-width:5px; border-style:solid;
 			border-color:transparent transparent #F45B69 transparent;}
-.hoverpopuplb	{position:absolute; top:100%; left:-513.5%; width:591%; height:auto;
+.hoverpopuplb	{position:absolute; top:100%; left:-513.5%; width:613%; height:auto;
 		visibility:hidden; pointer-events:none; background-color:#F45B69;
-		text-align:left; color:#000; padding:12px;}
+		text-align:left; color:#000; font-size:0.9em; box-sizing:border-box; padding:12px;}
 .hoverpopuplb::after 	{content:" "; position:absolute; bottom:100%; left:91%;
     			border-width:5px; border-style:solid;
 			border-color:transparent transparent #F45B69 transparent;}
-.hoverpopupr	{position:absolute; top:100%; left:0; width:293%; height:auto;
+.hoverpopupr	{position:absolute; top:100%; left:0; width:303.5%; height:auto;
 		visibility:hidden; pointer-events:none; background-color:#F45B69;
-		text-align:left; color:#000; padding:12px;}
+		text-align:left; color:#000; font-size:0.9em; box-sizing:border-box; padding:12px;}
 .hoverpopupr::after 	{content:" "; position:absolute; bottom:100%; left:16%;
     			border-width:5px; border-style:solid;
 			border-color:transparent transparent #F45B69 transparent;}
-.hoverpopupra	{position:absolute; top:100%; left:0; width:591%; height:auto;
+.hoverpopupra	{position:absolute; top:100%; left:0; width:616%; height:auto;
 		visibility:hidden; pointer-events:none; background-color:#F45B69;
-		text-align:left; color:#000; padding:12px;}
+		text-align:left; color:#000; font-size:0.9em; box-sizing:border-box; padding:12px;}
 .hoverpopupra::after 	{content:" "; position:absolute; bottom:100%; left:8%;
     			border-width:5px; border-style:solid;
 			border-color:transparent transparent #F45B69 transparent;}
-.hoverpopuprb	{position:absolute; top:100%; left:-103.5%; width:591%; height:auto;
+.hoverpopuprb	{position:absolute; top:100%; left:-103.5%; width:613%; height:auto;
 		visibility:hidden; pointer-events:none; background-color:#F45B69;
-		text-align:left; color:#000; padding:12px;}
+		text-align:left; color:#000; font-size:0.9em; box-sizing:border-box; padding:12px;}
 .hoverpopuprb::after 	{content:" "; position:absolute; bottom:100%; left:24%;
     			border-width:5px; border-style:solid;
 			border-color:transparent transparent #F45B69 transparent;}
@@ -122,26 +122,50 @@ a.active .icons  {background-color:#FFD700}
 .mod:hover .hoverpopupra{visibility:visible;}
 .mod:hover .hoverpopuprb{visibility:visible;}
 .modalEd	{position:relative; display:inline-block; width:30%; height:45%; cursor:default;
-		margin:7px 1%; box-sizing:border-box; padding:10px; vertical-align:top;
-		text-align:center; color:black; text-decoration:none;
-		-moz-box-shadow:2px 2px 15px #ccc; 
+		margin:7px 1%; box-sizing:border-box; padding:10px 10px 0; vertical-align:top;
+		text-align:center; overflow:auto; -moz-box-shadow:2px 2px 15px #ccc; 
 		-webkit-box-shadow:2px 2px 15px #ccc; box-shadow:2px 2px 15px #ccc;}
-.modalDialog {position:fixed; top:0; right:0; bottom:0; left:0;
-	background:rgba(0,0,0,0.8); z-index:200; opacity:0; pointer-events:none;
-        -webkit-transition:opacity 400ms ease-in; -moz-transition:opacity 400ms ease-in;
-        transition:opacity 400ms ease-in;}
+.modalEd img	{height:25%; padding:2px 0;}
+.modalEd f1	{line-height:0.7;}
+.modalEd a	{font-size:0.9em; text-decoration:underline;}
+.bubble {position:relative; padding:6px; line-height:2.5; border-radius:25px;
+	background-color:#CDCDCD; white-space:nowrap; text-align:center;}
+.modalDialog {position:fixed; top:0; right:0; bottom:0; left:0; z-index:200; opacity:0;
+	background:rgba(0,0,0,0.8); pointer-events:none; transition:opacity 400ms ease-in;
+        -webkit-transition:opacity 400ms ease-in; -moz-transition:opacity 400ms ease-in;}
 .modalDialog:target {opacity:1; pointer-events:auto;}
 .modalDialog > div  {position:absolute; background:#fff; top:3%; left:2%; width:96%; height:94%;
-		box-sizing:border-box; padding:5px 20px 13px 20px; border-radius:10px; 
-        	background:-moz-linear-gradient(#fff, #999);
-		background:-webkit-linear-gradient(#fff, #999);
-        	background:-o-linear-gradient(#fff, #999);}
-.close 	{position:absolute; top:-10px; right:-12px; width:24px; text-align:center;
-	background:#606061; box-shadow:1px 1px 3px #000; font-size:35px;
+		box-sizing:border-box; padding:13px 20px; border-radius:10px;
+		text-align:left;}
+.modalDialog f1	{line-height:1.2}
+.modalDialog .diva	{display:inline-block; width:30%; min-width:300px; text-align:center}
+.modalDialog .diva img	{width:300px; height:auto}
+.modalDialog .divb	{display:inline-block; width:68%; min-width:300px; text-align:left; 			vertical-align:top;}
+.close 	{position:absolute; top:-12px; right:-12px; width:24px; text-align:center;
+	background:#606061; box-shadow:1px 1px 3px #000;
         -webkit-border-radius: 12px; -moz-border-radius:12px; border-radius:12px;
         -moz-box-shadow:1px 1px 3px #000; -webkit-box-shadow:1px 1px 3px #000;
-	color:#FFFFFF; line-height:25px; font-weight:bold; text-decoration:none;}
+	font-size:30px!important; text-decoration:none!important;
+	color:#FFFFFF; line-height:25px; font-weight:bold;}
 .close:hover {background:#FFD700; color:black;}
+.imgHoverP img	{height:30px; float:left; margin-left:10px; position:relative;}
+.imgHoverP span	{position:fixed; top:0; left:0; bottom:0; right:0;
+		display:none; z-index:9999; background-color:rgba(0, 0, 0, 0.7);
+		pointer-events:none;}
+.imgHoverP:hover span 	{display:block;}
+.imgHoverP:hover span img{height:87.5%; max-width:90%; top:5%; left:50%;
+		-webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); 		transform:translateX(-50%);}
+.imgHoverL img	{height:30px; float:left; margin-left:10px; position:relative;}
+.imgHoverL span	{position:fixed; top:0; left:0; bottom:0; right:0;
+		display:none; z-index:9999; background-color:rgba(0, 0, 0, 0.7);
+		pointer-events:none;}
+.imgHoverL:hover span 	{display:block;}
+.imgHoverL:hover span img{height:auto; width:87.5%; left:5%; top:50%;
+		-webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); 		transform:translateY(-50%);}
+.caption	{display:inline-block; position:absolute; top:92.5%; z-index:9999;
+		height:auto; width:auto; max-width:80%; 
+		left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); 		transform:translateX(-50%);
+		text-align:center; font-size:1.5em; color:white; padding:3px 0;}
 .onlydesktop	{width:auto; height:auto; display:block;}
 
 .onlymidscreen	{height:0; display:none;}
@@ -157,8 +181,10 @@ f3	{font:400 1.25em; color:black; line-height:23px;}
 f4	{font:400 1em; color:grey; line-height:1.5;}
 .credits	{top:97%; color:white;}
 .mainbodya	{position:absolute; top:0; left:0; height:100%; width:50%;
-		background-color:white; text-align:justify;}
-.mainbodyb	{position:absolute; top:0; left:50%; height:100%; width:50%;}
+		background-color:white; text-align:justify;
+		box-sizing:border-box; padding:50px;}
+.mainbodyb	{position:absolute; top:0; left:50%; height:100%; width:50%;
+		box-sizing:border-box; padding:50px;}
 input[type=text], select, textarea 	{width:100%; resize:vertical;
 					box-sizing:border-box;
 					border:1px solid #ccc; border-radius:4px;
@@ -305,7 +331,7 @@ $(document).ready(function(){
 
 
 <div class="onlymidscreen">
-<div class="mainbodya"><div style="padding:50px;">
+<div class="mainbodya">
 <f1><b>Kay Jan </b>Wong</f1><br>
 <f2>Financial Services, Data Analyst</f2>
 <br><br><br>
@@ -324,8 +350,8 @@ $(document).ready(function(){
 <img style="width:30px;" src="https://1.bp.blogspot.com/-kr1JG_AItM8/WZhzFJOEqwI/AAAAAAAAA9A/5hrnRCZ32hckdbbszdA5Vcsc6HYxnf1GgCLcBGAs/s1600/Linkedin.png"></a>
 </div>
 </center>
-</div></div><!––close mainbodya––>
-<div class="mainbodyb"><div style="padding:50px;">
+</div><!––close mainbodya––>
+<div class="mainbodyb">
 <f1><font style="color:white">Contact me!</font></f1><br>
 <f2>Looking forward to answering your email.</f2><br><br><br>
 <form action="mailto:kayjan_wong@mymail.sutd.edu.sg" method="post" enctype="text/plain">
@@ -334,7 +360,7 @@ $(document).ready(function(){
 <textarea id="Subject" name="subject" placeholder="Subject" style="font-family:Calibri; font-size:1em; height:150px"></textarea>
 <input type="submit" value="Submit" style="font-family:Calibri; font-size:1em;">
 </form>
-</div></div><!––close mainbodyb––>
+</div><!––close mainbodyb––>
 </div><!--close onlymidscreen-->
 
 
@@ -342,27 +368,27 @@ $(document).ready(function(){
 <div class="onlydesktop">
 <div class="iconbar">
 <li><a href="#profile"><div class="icons" style="top:20%;">
-<img style="height:95%" src="https://1.bp.blogspot.com/-CfMYf6VJXqg/WZMiRzUkBRI/AAAAAAAAA7E/si5UKW1mTsAby_2nnkiAxmEixebQZdaDACLcBGAs/s1600/Profile.png">
+<img style="width:100%" src="https://1.bp.blogspot.com/-CfMYf6VJXqg/WZMiRzUkBRI/AAAAAAAAA7E/si5UKW1mTsAby_2nnkiAxmEixebQZdaDACLcBGAs/s1600/Profile.png">
 <aa>Profile</aa>
 </div></a></li>
 
 <li><a href="#education"><div class="icons" style="top:30%;">
-<img style="height:95%" src="https://4.bp.blogspot.com/-GW12ErGqGQo/WZMiSXEEdXI/AAAAAAAAA7M/61nx9SqQk88Pw6daDsAbCio_kgZHaYewACLcBGAs/s1600/Education.png">
+<img style="width:100%" src="https://4.bp.blogspot.com/-GW12ErGqGQo/WZMiSXEEdXI/AAAAAAAAA7M/61nx9SqQk88Pw6daDsAbCio_kgZHaYewACLcBGAs/s1600/Education.png">
 <aa>Education</aa>
 </div></a></li>
 
 <li><a href="#projects"><div class="icons" style="top:40%;">
-<img style="height:95%" src="https://2.bp.blogspot.com/-OaJfMG9Lv98/WZMiSkVM9MI/AAAAAAAAA7Q/IkzD_SYmatInbWmiPvWNCqKfXikRttCogCLcBGAs/s1600/Projects.png">
+<img style="width:100%" src="https://2.bp.blogspot.com/-OaJfMG9Lv98/WZMiSkVM9MI/AAAAAAAAA7Q/IkzD_SYmatInbWmiPvWNCqKfXikRttCogCLcBGAs/s1600/Projects.png">
 <aa>Projects</aa>
 </div></a></li>
 
 <li><a href="#achievements"><div class="icons" style="top:50%;">
-<img style="height:95%" src="https://3.bp.blogspot.com/-b6ueUPbO8sA/WZMiSAqhfVI/AAAAAAAAA7I/F3QbFhpgwj81E6pHg_oKZF4OzkibO-qKgCLcBGAs/s1600/Achievement.png">
+<img style="width:100%" src="https://3.bp.blogspot.com/-b6ueUPbO8sA/WZMiSAqhfVI/AAAAAAAAA7I/F3QbFhpgwj81E6pHg_oKZF4OzkibO-qKgCLcBGAs/s1600/Achievement.png">
 <aa>Achievements</aa>
 </div></a></li>
 
 <li><a href="#resume"><div class="icons" style="top:60%;">
-<img style="height:95%" src="https://3.bp.blogspot.com/-EO9qiNO4AxI/WZW5iZgBWiI/AAAAAAAAA8w/R4yJ0gbaSvw-NTXwFRhUIwKxX9IB2uN7gCLcBGAs/s1600/Resume.png">
+<img style="width:100%" src="https://3.bp.blogspot.com/-EO9qiNO4AxI/WZW5iZgBWiI/AAAAAAAAA8w/R4yJ0gbaSvw-NTXwFRhUIwKxX9IB2uN7gCLcBGAs/s1600/Resume.png">
 <aa>Resume</aa>
 </div></a></li>
 </div><!--close iconbar-->
@@ -372,8 +398,8 @@ $(document).ready(function(){
 
 <div class="body" id="profile">
 <div class="onlydesktop">
-<div style="position:absolute; top:50px; left:5%; width:90%; text-align:center"><br><br>
-<img style="width:22%" src="https://1.bp.blogspot.com/-N0QlFUXGg7o/WZNQ9nydeEI/AAAAAAAAA8A/bYz3Le4s6mk31qie1cgE0Wwn3etndSi2ACLcBGAs/s1600/me.png">
+<div style="position:absolute; top:50px; left:5%; width:90%; text-align:center; font-size:1.1em;"><br><br>
+<img style="width:22%" src="https://1.bp.blogspot.com/-N0QlFUXGg7o/WZNQ9nydeEI/AAAAAAAAA8A/bYz3Le4s6mk31qie1cgE0Wwn3etndSi2ACLcBGAs/s1600/me.png" alt="Wong Kay Jan">
 <br><br>
 
 <div style="position:absolute; top:15%; right:62%; text-align:right;">
@@ -745,48 +771,207 @@ Humanities, Arts and Social Sciences (HASS)&nbsp;
 <div style="position:absolute; display:inline-block; top:202%; left:2%; width:96%; height:88%; overflow:auto; text-align:center;">
 
 <div class="modalEd">
+<img src="https://3.bp.blogspot.com/-hRQOrEHLXpw/WXSeAFhL3CI/AAAAAAAAA20/43lIYwbPRRUXYmTTja_6EyF-ZWhJkgtogCLcBGAs/s1600/SBS.jpg" alt="SBS"><br>
 <f1>Project Leader</f1><br>
-<f2>Network Modeling</f2><br>
-<img style="width:90%; text-align:center;" src="https://3.bp.blogspot.com/-hRQOrEHLXpw/WXSeAFhL3CI/AAAAAAAAA20/43lIYwbPRRUXYmTTja_6EyF-ZWhJkgtogCLcBGAs/s1600/SBS.jpg">
-heyhey
-</div><!--modalEd-->
-
-<div class="modalEd">
-<a href="#openModal1">Box 1</a>
+<f2>Network Modeling</f2><br><br>
+Led a team of 4 to find out relationship between the bus services in Singapore given a network model<br>
+<span class="bubble">Python</span>
+<span class="bubble">R</span>
+<br><br>
+<a href="#openModal1">Click here to view more!</a>
 <div id="openModal1" class="modalDialog">
 <div>
 <a href="#projects" title="Close" class="close">&times;</a>
-<h2>Modal Box 1</h2>
-<p>This is a sample modal box that can be created using the powers of CSS3.</p>
-<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-</div></div>
+<f1>Network Modeling</f1><br>
+<f2><strong>Singapore Bus Service (SBS) Network</strong></f2><br><br>
+<div class="diva">
+<img src="https://3.bp.blogspot.com/-hRQOrEHLXpw/WXSeAFhL3CI/AAAAAAAAA20/43lIYwbPRRUXYmTTja_6EyF-ZWhJkgtogCLcBGAs/s1600/SBS.jpg" alt="SBS">
+</div><!––close diva––>
 
-<a href="#openModal2">Box 2</a>
+<div class="divb">
+To find out relationship between the bus services in Singapore given a network model<br>
+Background: Undirected graph with nodes representing bus numbers and weight of edges representing the number of common bus stops between buses. There are 322 nodes (buses) and 8958 edges.<br><br>
+Using Python, initial analysis is able show the different centrality (level of importance) of the network; degree centrality, eigenvector centrality, katz centrality and betweenness centrality. From the top 5 ranking of each centrality, there were only 9 unique bus numbers.<br>
+Using R, an interactive network, as shown below, is churned out with only the 9 unique bus numbers. It can be noticed that they are very interconnected.<br><br>
+<div style="display:inline-block; width:6%; vertical-align:top;">
+<img style="height:100px" src="https://1.bp.blogspot.com/-W61W78Hap0A/WXSraO9_yrI/AAAAAAAAA3A/ShBnks9PleAJKEAg6Fpjhm5bU1Z92cy2gCLcBGAs/s1600/Network%2BModeling%2BLegend.png">
+</div>
+<script src="index_files/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="index_files/d3-4.5.0/d3.min.js"></script>
+<script src="index_files/forceNetwork-binding-0.4/forceNetwork.js"></script>
+<div id="htmlwidget-69fa89b8ba5048fd0c3f" style="display:inline-block; width:90%; height:200px;" class="forceNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-69fa89b8ba5048fd0c3f">{"x":{"links":{"source":[0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8],"target":[1,2,3,5,6,7,0,2,3,4,5,6,7,8,0,1,3,4,5,6,7,8,0,1,2,4,5,6,7,8,1,2,3,5,6,7,8,0,1,2,3,4,6,8,0,1,2,3,4,5,7,0,1,2,3,4,6,8,1,2,3,4,5,7],"colour":["#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666"]},"nodes":{"name":[10,51,57,61,66,67,130,196,961],"group":["East","Central","Central","East","Central","East","Central","Central","North"]},"options":{"NodeID":"Bus","Group":"Region","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":14,"fontFamily":"serif","clickTextSize":17.5,"linkDistance":150,"linkWidth":"function(d) { return Math.sqrt(d.value); }","charge":-70,"opacity":1,"zoom":false,"legend":false,"arrows":false,"nodesize":false,"radiusCalculation":" Math.sqrt(d.nodesize)+6","bounded":true,"opacityNoHover":0,"clickAction":null}},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-69fa89b8ba5048fd0c3f">{"viewer":{"width":450,"height":350,"padding":10,"fill":true},"browser":{"width":960,"height":500,"padding":10,"fill":true}}</script><br><br>
+Using Python, further information can be extracted regarding degree distribution, diameter (longest shortest path), path, modularity (degree of clustering of nodes) and cliques. View the photos below to know more about the results.<br>
+<br>
+<i>Hover over thumbnail to enlarge image, click to open in new tab</i>
+<div class="imgHoverP">
+<img src="https://2.bp.blogspot.com/-UqUfzocV3UI/WXSNLt8ST3I/AAAAAAAAA18/yLRQkxZX80kHi-1eEyhi5tIiimKkJUp-ACLcBGAs/s1600/Network%2BModeling%2B1%2B%2528R%2Bcode%2529.JPG" alt="1. R Code" onclick="window.open('https://2.bp.blogspot.com/-UqUfzocV3UI/WXSNLt8ST3I/AAAAAAAAA18/yLRQkxZX80kHi-1eEyhi5tIiimKkJUp-ACLcBGAs/s1600/Network%2BModeling%2B1%2B%2528R%2Bcode%2529.JPG', '_blank');" />
+<span><div class="caption">1. R Code</div>
+<img src="https://2.bp.blogspot.com/-UqUfzocV3UI/WXSNLt8ST3I/AAAAAAAAA18/yLRQkxZX80kHi-1eEyhi5tIiimKkJUp-ACLcBGAs/s1600/Network%2BModeling%2B1%2B%2528R%2Bcode%2529.JPG" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://2.bp.blogspot.com/-MYytrQaXUiw/WXSNLnVluJI/AAAAAAAAA10/SWe6VF6fXtg1L9fdvACbdhubkCYhsjZvgCLcBGAs/s1600/Network%2BModeling%2B2%2B%2528Centrality%2529.JPG" alt="2. Centrality" onclick="window.open('https://2.bp.blogspot.com/-MYytrQaXUiw/WXSNLnVluJI/AAAAAAAAA10/SWe6VF6fXtg1L9fdvACbdhubkCYhsjZvgCLcBGAs/s1600/Network%2BModeling%2B2%2B%2528Centrality%2529.JPG', '_blank');" />
+<span><div class="caption">2. Centrality</div>
+<img src="https://2.bp.blogspot.com/-MYytrQaXUiw/WXSNLnVluJI/AAAAAAAAA10/SWe6VF6fXtg1L9fdvACbdhubkCYhsjZvgCLcBGAs/s1600/Network%2BModeling%2B2%2B%2528Centrality%2529.JPG" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://3.bp.blogspot.com/-imRusOiSr9I/WXSNMZpTGbI/AAAAAAAAA2E/nOJowWOw5UYG7Nym3O0LUq7z2q90p-HzwCLcBGAs/s1600/Network%2BModeling%2B3%2B%2528Degree%2BDistribution%2529.JPG" alt="3. Degree Distribution and Diameter" onclick="window.open('https://3.bp.blogspot.com/-imRusOiSr9I/WXSNMZpTGbI/AAAAAAAAA2E/nOJowWOw5UYG7Nym3O0LUq7z2q90p-HzwCLcBGAs/s1600/Network%2BModeling%2B3%2B%2528Degree%2BDistribution%2529.JPG', '_blank');" />
+<span><div class="caption">3. Degree Distribution and Diameter</div>
+<img src="https://3.bp.blogspot.com/-imRusOiSr9I/WXSNMZpTGbI/AAAAAAAAA2E/nOJowWOw5UYG7Nym3O0LUq7z2q90p-HzwCLcBGAs/s1600/Network%2BModeling%2B3%2B%2528Degree%2BDistribution%2529.JPG" alt=""></span>
+</div>
+<div class="imgHoverL">
+<img src="https://3.bp.blogspot.com/-4sT5TUCcnTw/WXSNMTXS1LI/AAAAAAAAA2I/GW-dZmZLNo4Aoc6UDvZVrgM6NNFSKTFkgCLcBGAs/s1600/Network%2BModeling%2B4%2B%2528Path%2529.JPG" alt="4. Path" onclick="window.open('https://3.bp.blogspot.com/-4sT5TUCcnTw/WXSNMTXS1LI/AAAAAAAAA2I/GW-dZmZLNo4Aoc6UDvZVrgM6NNFSKTFkgCLcBGAs/s1600/Network%2BModeling%2B4%2B%2528Path%2529.JPG', '_blank');" />
+<span><div class="caption">4. Path</div>
+<img src="https://3.bp.blogspot.com/-4sT5TUCcnTw/WXSNMTXS1LI/AAAAAAAAA2I/GW-dZmZLNo4Aoc6UDvZVrgM6NNFSKTFkgCLcBGAs/s1600/Network%2BModeling%2B4%2B%2528Path%2529.JPG" alt=""></span>
+</div>
+<div class="imgHoverL">
+<img src="https://3.bp.blogspot.com/-lA3Zwq3zDnQ/WXSNME0eJHI/AAAAAAAAA2A/bMg749Lws5UF43VN7adBhyZEx5LM5TxvgCLcBGAs/s1600/Network%2BModeling%2B5%2B%2528Modularity%2529.JPG" alt="5. Modularity" onclick="window.open('https://3.bp.blogspot.com/-lA3Zwq3zDnQ/WXSNME0eJHI/AAAAAAAAA2A/bMg749Lws5UF43VN7adBhyZEx5LM5TxvgCLcBGAs/s1600/Network%2BModeling%2B5%2B%2528Modularity%2529.JPG', '_blank');" />
+<span><div class="caption">5. Modularity</div>
+<img src="https://3.bp.blogspot.com/-lA3Zwq3zDnQ/WXSNME0eJHI/AAAAAAAAA2A/bMg749Lws5UF43VN7adBhyZEx5LM5TxvgCLcBGAs/s1600/Network%2BModeling%2B5%2B%2528Modularity%2529.JPG" alt=""></span>
+</div>
+</div><!--close divb-->
+</div></div>
+</div><!--close modalEd-->
+
+<div class="modalEd">
+<img src="https://3.bp.blogspot.com/-3JoeFGdrKsg/WXSNe1TSIhI/AAAAAAAAA2U/Y-IvnLM8wbcob6pgorchodroidOKnkwyQCLcBGAs/s1600/YCH.png" alt="YCH"><br>
+<f1>Project Member</f1><br>
+<f2>Operations Management</f2><br><br>
+Worked with a team of 5 to forecast demand to optimize inventory planning and restocking policy<br>
+<span class="bubble">ExtendSim</span>
+<span class="bubble">Python</span>
+<span class="bubble">R</span>
+<br><br>
+<a href="#openModal2">Click here to view more!</a>
 <div id="openModal2" class="modalDialog">
 <div>
 <a href="#projects" title="Close" class="close">&times;</a>
-<h2>Modal Box 2</h2>
-<p><strong>Box 2</strong></p>
-<p>yadda yadda</p>
+<f1>Operations Management</f1><br>
+<f2><strong>Inventory Level Optimizing</strong></f2><br><br>
+<div class="diva">
+<img src="https://3.bp.blogspot.com/-3JoeFGdrKsg/WXSNe1TSIhI/AAAAAAAAA2U/Y-IvnLM8wbcob6pgorchodroidOKnkwyQCLcBGAs/s1600/YCH.png" alt="YCH">
+</div><!––close diva––>
+
+<div class="divb">
+To forecast demand to optimize inventory planning and restocking policy<br>
+Problem: Company B, a client of YCH, faces stock-out of products due to unexpected demand which result in loss of sales. Also, they are not maximizing profit as they use a pure freight mode, air freight, which is expensive as they do not order in bulk.<br><br>
+Using R, the products that are most popular are identified and singled out for further analysis.<br>
+Using Python, by data visualisation, the same popular products corresponds to products that generate highest sales revenue.<br>
+<br>
+Our proposed methodology includes<br>
+1. Remove obsolete products from warehouse<br>
+By removing obsolete inventory items that are in stock but have not been ordered for more than 2 years, this frees up more space in the warehouse for other fast moving products.<br>
+<br>
+2. Identify and readjust the optimal PAR/order-up-to level<br>
+As Company B uses a PAR (Periodic Automatic Replacement) level model, a pull system inventory control, it employs a just-in-time concept. Loss of sales due to stock-outs can be reduced by readjusting the optimal PAR level.<br>
+Using statistical analysis, we realized the data of quantity order per day for each product fits a Poisson distribution.<br>
+By applying the poisson distributed demand, the optimal PAR level is obtained for different fill rate for each product.<br>
+<br>
+3. Employ dual freight transportation<br>
+To reduce transportation cost for Company B, slow freight mode (shipping) can be introduced and used in complementary with the existing fast mode (air freight).<br>
+Using ExtendSim, the new model of increased par level and dual freight mode can be visualized. Our suggested model prioritises shipping as the preferred choice of mode of delivery with par level 6. Unless inventory level drops below 4, air freight will be the preferred choice. Whereas Company B's existing model only consists of air freight mode of delivery and a par level of 5.<br>
+Running the simulation 10 times, there is significant transport cost savings ($2553 per product per year) and less ocurrence of stock-outs. View the photos below to know more about our results.<br>
+<br>
+<i>Hover over thumbnail to enlarge image, click to open in new tab</i>
+<div class="imgHoverP">
+<img src="https://2.bp.blogspot.com/-v_nlFTdYXns/WVT7ss49PbI/AAAAAAAAAzQ/dT4CjczlczMieYgk11XGMUtsZCwq7DJfQCLcBGAs/s1600/Term%2B5%2BOM.jpg" alt="1. Poster" onclick="window.open('https://2.bp.blogspot.com/-v_nlFTdYXns/WVT7ss49PbI/AAAAAAAAAzQ/dT4CjczlczMieYgk11XGMUtsZCwq7DJfQCLcBGAs/s1600/Term%2B5%2BOM.jpg', '_blank');" />
+<span><div class="caption">1. Poster</div>
+<img src="https://2.bp.blogspot.com/-v_nlFTdYXns/WVT7ss49PbI/AAAAAAAAAzQ/dT4CjczlczMieYgk11XGMUtsZCwq7DJfQCLcBGAs/s1600/Term%2B5%2BOM.jpg" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://4.bp.blogspot.com/-EwQ-hEsdhzQ/WXWqnNaI0wI/AAAAAAAAA40/n0CnBvVhJVwAy04KWG67xpQD_ZAphFPWQCLcBGAs/s1600/YCH%2BProduct%2Bby%2BPopularity.JPG" alt="2. Product by Popularity" onclick="window.open('https://4.bp.blogspot.com/-EwQ-hEsdhzQ/WXWqnNaI0wI/AAAAAAAAA40/n0CnBvVhJVwAy04KWG67xpQD_ZAphFPWQCLcBGAs/s1600/YCH%2BProduct%2Bby%2BPopularity.JPG', '_blank');" />
+<span><div class="caption">2. Product by Popularity</div>
+<img src="https://4.bp.blogspot.com/-EwQ-hEsdhzQ/WXWqnNaI0wI/AAAAAAAAA40/n0CnBvVhJVwAy04KWG67xpQD_ZAphFPWQCLcBGAs/s1600/YCH%2BProduct%2Bby%2BPopularity.JPG" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://4.bp.blogspot.com/-Sqn2xWCKtww/WXWqmw4_XJI/AAAAAAAAA4w/o1YJ2dPns3AgwGsQqdGsCP-__Dk6IgJrwCLcBGAs/s1600/YCH%2BProduct%2Bby%2BSales%2BRevenue.JPG" alt="3. Product by Sales Revenue" onclick="window.open('https://4.bp.blogspot.com/-Sqn2xWCKtww/WXWqmw4_XJI/AAAAAAAAA4w/o1YJ2dPns3AgwGsQqdGsCP-__Dk6IgJrwCLcBGAs/s1600/YCH%2BProduct%2Bby%2BSales%2BRevenue.JPG', '_blank');" />
+<span><div class="caption">3. Product by Sales Revenue</div>
+<img src="https://4.bp.blogspot.com/-Sqn2xWCKtww/WXWqmw4_XJI/AAAAAAAAA4w/o1YJ2dPns3AgwGsQqdGsCP-__Dk6IgJrwCLcBGAs/s1600/YCH%2BProduct%2Bby%2BSales%2BRevenue.JPG" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://2.bp.blogspot.com/-do5pnHy8xe8/WXWqmtZcUhI/AAAAAAAAA4s/lxuyRWsl_cous0y_6WRQR8-0WNblUsc3gCLcBGAs/s1600/YCH%2BPoisson%2BDistribution.JPG" alt="4. Poisson Distributed Demand" onclick="window.open('https://2.bp.blogspot.com/-do5pnHy8xe8/WXWqmtZcUhI/AAAAAAAAA4s/lxuyRWsl_cous0y_6WRQR8-0WNblUsc3gCLcBGAs/s1600/YCH%2BPoisson%2BDistribution.JPG', '_blank');" />
+<span><div class="caption">4. Poisson Distributed Demand</div>
+<img src="https://2.bp.blogspot.com/-do5pnHy8xe8/WXWqmtZcUhI/AAAAAAAAA4s/lxuyRWsl_cous0y_6WRQR8-0WNblUsc3gCLcBGAs/s1600/YCH%2BPoisson%2BDistribution.JPG" alt=""></span>
+</div>
+<div class="imgHoverL">
+<img src="https://4.bp.blogspot.com/-yVdH1_9inug/WXWqmPaCt4I/AAAAAAAAA4o/AcJYE69stxYdr0e_6LF_nfXa17ZhUVnNgCLcBGAs/s1600/YCH%2BPAR%2BLevel.JPG" alt="5. Adjusted vs Original PAR Level" onclick="window.open('https://4.bp.blogspot.com/-yVdH1_9inug/WXWqmPaCt4I/AAAAAAAAA4o/AcJYE69stxYdr0e_6LF_nfXa17ZhUVnNgCLcBGAs/s1600/YCH%2BPAR%2BLevel.JPG', '_blank');" />
+<span><div class="caption">5. Adjusted vs Original PAR Level</div>
+<img src="https://4.bp.blogspot.com/-yVdH1_9inug/WXWqmPaCt4I/AAAAAAAAA4o/AcJYE69stxYdr0e_6LF_nfXa17ZhUVnNgCLcBGAs/s1600/YCH%2BPAR%2BLevel.JPG" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://3.bp.blogspot.com/-DJ079eW3EnY/WXWqmEn2LAI/AAAAAAAAA4g/tm5rA0JKdVk2R4Y3uTEIyhIk7D6S0WmCwCLcBGAs/s1600/YCH%2BExtendSim%2BSimulation.JPG" alt="6. ExtendSim Simulation" onclick="window.open('https://3.bp.blogspot.com/-DJ079eW3EnY/WXWqmEn2LAI/AAAAAAAAA4g/tm5rA0JKdVk2R4Y3uTEIyhIk7D6S0WmCwCLcBGAs/s1600/YCH%2BExtendSim%2BSimulation.JPG', '_blank');" />
+<span><div class="caption">6. ExtendSim Simulation</div>
+<img src="https://3.bp.blogspot.com/-DJ079eW3EnY/WXWqmEn2LAI/AAAAAAAAA4g/tm5rA0JKdVk2R4Y3uTEIyhIk7D6S0WmCwCLcBGAs/s1600/YCH%2BExtendSim%2BSimulation.JPG" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://3.bp.blogspot.com/-JGboWqd5pPs/WXWqlwV9reI/AAAAAAAAA4k/6gHQBIfH980w34FxWw4xe_qRpryaWhkSgCLcBGAs/s1600/YCH%2BExtendSim%2BResults.JPG" alt="7. ExtendSim Simulation Results" onclick="window.open('https://3.bp.blogspot.com/-JGboWqd5pPs/WXWqlwV9reI/AAAAAAAAA4k/6gHQBIfH980w34FxWw4xe_qRpryaWhkSgCLcBGAs/s1600/YCH%2BExtendSim%2BResults.JPG', '_blank');" />
+<span><div class="caption">7. ExtendSim Simulation Results</div>
+<img src="https://3.bp.blogspot.com/-JGboWqd5pPs/WXWqlwV9reI/AAAAAAAAA4k/6gHQBIfH980w34FxWw4xe_qRpryaWhkSgCLcBGAs/s1600/YCH%2BExtendSim%2BResults.JPG" alt=""></span>
+</div>
+</div><!––close divb––>
 </div></div>
-</div><!--modalEd-->
+</div><!--close modalEd-->
 
 <div class="modalEd">
-hey
-</div><!--modalEd-->
+<img src="https://3.bp.blogspot.com/-YVqBxzSIlCE/WXSNes48mMI/AAAAAAAAA2Q/nboMXW17oQwzhvYNjdopQ3ViXkxEBxypgCLcBGAs/s1600/Park%2BAvenue.png" alt="Park Avenue Hotel"><br>
+<f1>Project Leader</f1><br>
+<f2>Engineering Systems Design</f2><br><br>
+Led a group of 4 to determine the ideal hotel rate based on occupancy rate forecast and other variables to maximize revenue<br>
+<span class="bubble">R</span>
+<br><br>
+<a href="#openModal3">Click here to view more!</a>
+<div id="openModal3" class="modalDialog">
+<div>
+<a href="#projects" title="Close" class="close">&times;</a>
+<f1>Operations Management</f1><br>
+<f2><strong>Inventory Level Optimizing</strong></f2><br><br>
+<div class="diva">
+<img src="https://3.bp.blogspot.com/-YVqBxzSIlCE/WXSNes48mMI/AAAAAAAAA2Q/nboMXW17oQwzhvYNjdopQ3ViXkxEBxypgCLcBGAs/s1600/Park%2BAvenue.png" alt="Park Avenue Hotel">
+</div><!––close diva––>
+
+<div class="divb">
+To determine the ideal hotel rate based on occupancy rate forecast and other variables in order to maximize revenue.<br>
+Problem: Hotel prices are not set at the highest walkaway rate; the maximum price that will cause customers to 'walk away' and hence not maximizing their revenue.<br><br>
+From the preliminary analysis, irrelevant data is eliminated and there was a need to categorize data into weekdays and weekends. 70% of data is also assigned as 'training data' and 30% as 'testing data' to be able to test our final model.<br><br>
+Our data discovery findings:<br>
+1. Price and occupancy are not strongly correlated<br>
+Using R, the scatter diagram of room prices against occupancy yields an R-squared value of 0.07289, implying weak to no correlation.<br><br>
+2. Setting price using lowess function<br>
+Using R, a lowess function (scatter plot smoothing tool) calculates and plot the average price of each occupancy. This line is fairly straight and can be used as a guideline for base price or ceiling price.<br><br>
+3. Events are significant factor of room prices<br>
+Using R, the lowess function is applied again after splitting the data into 'Days with Events in Singapore' and 'Days without Events in Singapore'. The line is consistently higher across all occupancy rates when there are events in Singapore. The location of events also affect the room prices.<br><br>
+4. Month of the year does not affect room prices<br>
+5. Last week prices can act as a pricing guideline<br>
+6. Competitor prices can act as a pricing guideline<br><br>
+From all the factors affecting room prices, a spreadsheet is generated consisting of the lower bound / upper bound rates to set at for different days.<br>
+<br>
+<i>Hover over thumbnail to enlarge image, click to open in new tab</i>
+<div class="imgHoverP">
+<img src="https://2.bp.blogspot.com/-iactxVKEnM0/WVT7sEucu3I/AAAAAAAAAzU/pGQ_u9qEhl0f7fryvNcQXa0c3h72DR6yQCLcBGAs/s1600/Term%2B4%2BESD.png" alt="1. Poster" onclick="window.open('https://2.bp.blogspot.com/-iactxVKEnM0/WVT7sEucu3I/AAAAAAAAAzU/pGQ_u9qEhl0f7fryvNcQXa0c3h72DR6yQCLcBGAs/s1600/Term%2B4%2BESD.png', '_blank');" />
+<span><div class="caption">1. Poster</div>
+<img src="https://2.bp.blogspot.com/-iactxVKEnM0/WVT7sEucu3I/AAAAAAAAAzU/pGQ_u9qEhl0f7fryvNcQXa0c3h72DR6yQCLcBGAs/s1600/Term%2B4%2BESD.png" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://3.bp.blogspot.com/-6RKt0a30CtE/WXaS8mFndCI/AAAAAAAAA5Q/IdDxTjqSp3YPKQkXn_4W0iwO4yoKEueyACLcBGAs/s1600/Outline.png" alt="2. Outline" onclick="window.open('https://3.bp.blogspot.com/-6RKt0a30CtE/WXaS8mFndCI/AAAAAAAAA5Q/IdDxTjqSp3YPKQkXn_4W0iwO4yoKEueyACLcBGAs/s1600/Outline.png', '_blank');" />
+<span><div class="caption">2. Outline</div>
+<img src="https://3.bp.blogspot.com/-6RKt0a30CtE/WXaS8mFndCI/AAAAAAAAA5Q/IdDxTjqSp3YPKQkXn_4W0iwO4yoKEueyACLcBGAs/s1600/Outline.png" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://1.bp.blogspot.com/-Ry9u_G8IhBk/WXaUT4B43vI/AAAAAAAAA5Y/NR9Mz1nTttcuUW8_3Fqk76jEg3TsJg6aQCLcBGAs/s1600/PA%2BPoint%2B2.JPG" alt="3. Room Rates with Lowess Function" onclick="window.open('https://1.bp.blogspot.com/-Ry9u_G8IhBk/WXaUT4B43vI/AAAAAAAAA5Y/NR9Mz1nTttcuUW8_3Fqk76jEg3TsJg6aQCLcBGAs/s1600/PA%2BPoint%2B2.JPG', '_blank');" />
+<span><div class="caption">3. Room Rates with Lowess Function</div>
+<img src="https://1.bp.blogspot.com/-Ry9u_G8IhBk/WXaUT4B43vI/AAAAAAAAA5Y/NR9Mz1nTttcuUW8_3Fqk76jEg3TsJg6aQCLcBGAs/s1600/PA%2BPoint%2B2.JPG" alt=""></span>
+</div>
+<div class="imgHoverP">
+<img src="https://2.bp.blogspot.com/-7-uHN-D_qF8/WXaUT_wl_FI/AAAAAAAAA5c/jgDoEWbXoNA7_AJtc1cAcESIaLVd_l19gCLcBGAs/s1600/PA%2BPoint%2B3.JPG" alt="4. Room Rates with Lowess Function filtered by Events" onclick="window.open('https://2.bp.blogspot.com/-7-uHN-D_qF8/WXaUT_wl_FI/AAAAAAAAA5c/jgDoEWbXoNA7_AJtc1cAcESIaLVd_l19gCLcBGAs/s1600/PA%2BPoint%2B3.JPG', '_blank');" />
+<span><div class="caption">4. Room Rates with Lowess Function filtered by Events</div>
+<img src="https://2.bp.blogspot.com/-7-uHN-D_qF8/WXaUT_wl_FI/AAAAAAAAA5c/jgDoEWbXoNA7_AJtc1cAcESIaLVd_l19gCLcBGAs/s1600/PA%2BPoint%2B3.JPG" alt=""></span>
+</div>
+</div><!––close divb––>
+</div></div>
+</div><!--close modalEd-->
 <br><br>
 
-<div class="modalEd">
-hey
-</div><!--modalEd-->
-
-<div class="modalEd">
-hey
-</div><!--modalEd-->
-
-<div class="modalEd">
-hey
-</div><!--modalEd-->
 </div><!--close position-->
 <div style="top:290%;" class="footer">
 <a href="#achievements">Achievements<br>&#8595;</a>
